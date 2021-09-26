@@ -4,8 +4,8 @@ Este es un repositorio de apuntes y notas sobre diferentes temas, abarca tanto c
 
 ## Universidad
 
-* [[./cuarta-generacion-3/redme.md|Cuarta Generación III]]: Administración de bases de datos de Oracle.
-* [[auditoria_de_sistemas/readme.md|Auditoria de Sistemas]]: Gestión de riesgos de TI, alineación entre TI, etc.
+* [Cuarta Generación](cuarta-generacion-3/readme.md.md): Administración de bases de datos de Oracle.
+* [Auditoria de Sistemas](auditoria_de_sistemas/readme.md): Gestión de riesgos de TI, alineación entre TI, etc.
 
 ## Udemy
 
