@@ -134,7 +134,7 @@ Viéndolo con un ejemplo sobre el tema de Obsolescencia tecnológica, esto no in
 
 Acá se puede a ver todo COBIT, en gris se encuentran los procesos realizados por el **Gobierno de TI** y en azul se encuentran todos los procesos de **Gestión de TI**. Se puede ver que la parte azul esta adentro de la parte gris, donde **Gobierno** es responsable de aquello que se hace en **Gestión**.
 
-![Modelo de Referencia de COBIT](Process-Reference-Model-in-COBIT-5-Source-ITGI-COBIT-5-PAM-2013.jpg)
+![Modelo de Referencia de COBIT](resources/COBIT_Processos.jpg)
 
 Viendo cada proceso, se puede usar como base en la **Gestión o Gobierno de TI** de una empresa, en donde en teoría seria posible usar la APO13 o la ISO 27001 según sea deseado pero cabe a destacar que COBIT 5  se alimenta de la ISO 27001, entonces se esta cumpliendo con la normativa internacional a cierto grado pero **no en su totalidad.**
 
@@ -184,7 +184,7 @@ COBIT se implementa en un ciclo de **7 pasos con 3 dimensiones** adicionales.
 
 > Un proceso se puede definir como un conjunto organizado de practicas influenciadas por las políticas y procedimientos de la empresa. Toma entradas de otros procesos…
 
-![Modelo de Referencia de COBIT](Process-Reference-Model-in-COBIT-5-Source-ITGI-COBIT-5-PAM-2013.jpg)
+![Modelo de Referencia de COBIT](resources/COBIT_Processos.jpg)
 
 ### Actividades :asterisk:
 
@@ -254,7 +254,7 @@ El Dominio de Gestión esta compuesto varios enfoques.
 - **MEA02:** Supervisar, Evaluar y Valorar el Sistema de Control Interno.
 - **MEA03:** Supervisar, Evaluar y Valorar la Conformidad con los Requerimientos Externos.
 
-## Marcos de Trabajo, Principios y Políticas de COBIT :asterisk:
+## Marcos de Trabajo, Principios y Políticas de COBIT
 
 Son los medios para traducir el comportamiento deseado en guías practicas para la gestión del día a día.
 
