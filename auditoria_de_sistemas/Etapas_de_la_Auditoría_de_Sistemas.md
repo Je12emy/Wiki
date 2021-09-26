@@ -10,7 +10,7 @@ Se define que área por abordar y que estrategia por utilizar, se tiene que cons
 
 > Proceso que describe un problema y contexto, con el fin de identificar los elementos de peligro o riesgo importante para varias desiciones de gestión de riesgos.
 
-Previamente visto, el [[Teoría de Riesgos#Perfíl de Riesgo|perfil de riesgo]] permite determinar cuanto riesgo se tiene en una empresa, cuanto se aceptara y cuanto se aguantara.
+Previamente visto, el [perfil de riesgo](Teoría_de_Riesgos.md) permite determinar cuanto riesgo se tiene en una empresa, cuanto se aceptara y cuanto se aguantara.
 
 Requiere de un proceso de identificación de aspectos de riesgos para establecer prioridad y se determina la política ante como evaluar los riesgos y cuál normal por utilizar en los procesos de evaluación.
 
