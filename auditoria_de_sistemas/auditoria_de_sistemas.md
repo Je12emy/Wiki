@@ -20,4 +20,4 @@ Asegurar que TI genera valor para la empresa, evaluando riesgos y definiendo con
 * [Informe de Auditoría](Informe_de_Auditoría)
 * [Integridad de Datos](Integridad_de_Datos)
 * [Continuidad de la Operación](Continuidad_de_la_Operación)
-* [[Evaluación de la Seguridad]]
+* [Evaluación de la Seguridad](Evaluación_de_la_Seguridad)
