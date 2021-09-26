@@ -28,7 +28,7 @@ Ante cada actividad se identifican a todos los riesgos posibles, desde acá se c
 
 Se tiene que contextualizar un riesgo, sectorizar y **detallar bajo que condiciones se materializa un riesgo.** Acá **no existen supuestos**, el análisis parte de hechos.
 
-![Acciones ante el Riesgo](Acciones%20ante%20un%20Riesgo.png)
+![Acciones ante un Riesgo](resources/acciones_ante_riesgo.png)
 
 ## Tipos de Riesgo
 
@@ -49,7 +49,7 @@ Para definir cuál es el riesgo de una empresa se definen los siguientes aspecto
 * **Apetito:** Cuanto riesgo se va a aceptar.
 * **Perfil de Riesgo**: Se define el perfil de cuál es la tolerancia y apetito, esto define cuál es el riesgo de una actividad.
 
-![Perfil de Riesgo](Perfil%20de%20Riesgo.png)
+![Perfil de Riesgo](resources/perfil_riesgo.png)
 
 ## Valoración de un Riesgo
 
@@ -67,7 +67,7 @@ Se puede valorar cada riesgo posicionándolo dentro de la matriz o cuantificánd
 
 Es necesario contextualizar un escenario en la auditoria para definir si este se está mitigando, aceptando o transfiriendo.
 
-![Contexto de un Riesgo](Contexto%20de%20un%20Riesgo.png)
+![Contexto de un Riesgo](resources/contexto_riesgo.png)
 
 Contextualicemos este caso:
 
@@ -85,13 +85,13 @@ La evaluación de un riesgo se puede realizar mediante una matriz de riesgo, la 
 
 > Agrupación de riesgos y categorización de estos según su tipo.
 
-Esto lo podemos ver incluso dentro de una ISO ![ISO-27002](ISO%2027002.png)
+Esto lo podemos ver incluso dentro de una ISO 
+
+![ISO-27002](resources/ISO_27002.png)
 
 * En azul encontramos el dominio, estas son áreas de la ISO.
 * En rojo los objetivos de control, los agrupamientos.
 * En negro encontramos los controles, asociados a un riesgo.
-
-*Contestar siempre lo que nos explican, tener cuidado en contra decirse si se extiende mucho un análisis*
 
 Una Empresa de Servicios Financieros con gestores de negocio (asiste al financiamiento de una empresa) que conoce los estándares éticos correspondientes, acá el objetivo de control es el personal. El riesgo esta asociado es la operación con comercios que entran en conflicto con los objetivos del negocio según la ética comercial.
 
@@ -112,7 +112,3 @@ En la auditoria de sistemas encontramos los siguientes factores que pueden causa
 * Desviaciones estratégicas.
 * Incumplimientos normativos (tanto internos como externos).
 * Perdida de participación en el mercado.
-
----
-
-\#administración #gestión #riesgo

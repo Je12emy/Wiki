@@ -10,8 +10,7 @@ Es el resultado final y único entregable de todo el trabajo realizado por el eq
 * Papeles de Trabajo: Todos los insumos o herramientas usados en el proceso de revisión.
 * Seguimiento (Revisión): Ligado hacia el cliente, en el proceso de informe, **es que al realizar auditorias se evalúa un proceso gestionado en una auditoria previa** entonces es necesario si ya existen hallazgos, evidencias u otros sobre estas. **Si se encuentra que no se han implementado los controles sobre los temas realizados en un informe previo, se identifica a un problema recurrent**e, esto le da más peso al informe como tal. Esto cae sobre el seguimiento externo.
 
-
-![[Composición del Informe de Auditoría.png]]
+![[resources/Composición_Informe_Auditoría.png]]
 
 ### Normas
 

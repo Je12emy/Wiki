@@ -22,14 +22,21 @@ La auditoria como tal se encuentra por **fuera** de la empresa (que se encuentra
 
 Esta es la ubicación ideal de la auditoria y esto significa que esta evalúa a la empresa o todo aquello por debajo de la *Gerencia General*. Cuando la auditoría se encuentra dentro de la empresa, se da un proceso viciado (puede ser influenciado) que resulta ilegal.
 
-![[Estructura Organizativa Ideal.png|Estructura Organizativa]]
+![[resources/Estructura_Organizativa_Ideal.png|Estructura Organizativa]]
 
 ### Estructura Interna
 
 La Auditoría General se encuentra compuesta por los siguientes roles, como dato curioso el curso actual se centra en la Gerencia de Fiscalización
 
-![[Composición del Departamento de Auditoría General.png]]
+![[resources/Composición_Departamento_Auditoría_General.png]]
 
 A continuación se detallan las funciones de cada uno.
 
-| Área | Descripción | | --- | --- | | Auditoría General | Aseguramiento objetiva y asesora que brinda sus servicios a los sectores interesados de la organización | | Sub auditoría General | Responsable del seguimiento de recomendaciones emitidas por la Auditoría General y otro ente. | | Gestión de Marca de Liderazgo | Responsable de diseñar, desarrollar, implementar y mejorar la Marca de Liderazgo de la Auditoría General, de manera que la auditoría genere valor para los interesados. | | Gerencia de Gestión y Servicios | Responsable de potenciar el enfoque sistémico y moderno de la Auditoría General, mediante la mejora continua. | | Gerencia de Innovación y Auditoría Continua | Responsale de potenciar el enfoque preventivo y predictiva de la Auditoría General a partir de herramientas y/o modelos innovadores que mejoren la eficiencia y la eficacia. | | Gerencia de Fiscalización | Brinda servicios y asesoría preventiva a la Administración hacia el logro de objetivos. |
+| Área                                        | Descripción                                                                                                                                                                  |
+| ---                                         | ---                                                                                                                                                                          |
+| Auditoría General                           | Aseguramiento objetiva y asesora que brinda sus servicios a los sectores interesados de la organización                                                                      |
+| Sub auditoría General                       | Responsable del seguimiento de recomendaciones emitidas por la Auditoría General y otro ente.                                                                                |
+| Gestión de Marca de Liderazgo               | Responsable de diseñar, desarrollar, implementar y mejorar la Marca de Liderazgo de la Auditoría General, de manera que la auditoría genere valor para los interesados.      |
+| Gerencia de Gestión y Servicios             | Responsable de potenciar el enfoque sistémico y moderno de la Auditoría General, mediante la mejora continua.                                                                |
+| Gerencia de Innovación y Auditoría Continua | Responsale de potenciar el enfoque preventivo y predictiva de la Auditoría General a partir de herramientas y/o modelos innovadores que mejoren la eficiencia y la eficacia. |
+| Gerencia de Fiscalización                   | Brinda servicios y asesoría preventiva a la Administración hacia el logro de objetivos.                                                                                      |
