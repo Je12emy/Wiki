@@ -54,8 +54,8 @@ Se tienen los siguientes elementos para asegurar la calidad.
 
 * Asegurar la calidad y robustez de los datos en los sistemas.
   * Mediante un registro de todos los datos críticos de un sistema.
-  * [[Continuidad de la Operación]] que asegure la continuidad de la operación.
+  * [Continuidad de la Operación](Continuidad_de_la_Operación.md) que asegure la continuidad de la operación.
   * Selección de sistemas y proveedores que cumplan con las regulaciones vigentes.
   * Realizar copias de seguridad, resguardarlas en una ubicación segura y verificar la recuperación de todos los datos.
 
-![[Pilares de la Integridad de los Datos.png]]
+![[resources/Pilares_Integridad_Datos.png]]

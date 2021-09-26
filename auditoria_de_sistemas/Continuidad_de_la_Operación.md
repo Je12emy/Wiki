@@ -64,4 +64,4 @@ Procedimientos de Recuperación ante desastre.
 
 Tabla de referencia para definir el tiempo que se espera llegar en caída, las grandes empresas suelen estar entre los 4 y 5. Se vuelve importante en el escenario de la contratación como tal de proveedores de servicios.
 
-![[Porcentaje de disponibilidad.png]]
+![Tabla de Disponibilidad](https://i.pinimg.com/originals/8b/64/ea/8b64ea1bac7134918fb48102540d71df.jpg)

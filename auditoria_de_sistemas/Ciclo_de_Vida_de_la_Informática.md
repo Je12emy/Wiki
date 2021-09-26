@@ -7,8 +7,6 @@ La informática en el ámbito de las empresas (más grandes) por lo general, est
 3. Plan de Proyecto: Planeación de adquisición, integración, etc.
 4. Análisis: Análisis de la ejecución.
 
----
-
 **Infraestructura del Negocio**
 
  5. *Arquitectura:* Sustentado por el análisis, se definen los equipos, métodos (respaldo, procesamiento, comunicación.)
@@ -21,8 +19,6 @@ La informática en el ámbito de las empresas (más grandes) por lo general, est
 
 **Infraestructura del Negocio**
 
----
-
 Se inicia con a *viabilidad y las necesidades* de negocio por solventar un problema. Desde esto inicia el proceso de "como" hacer este proceso de adquisición e integración que es lo que denomina como *plan del proyecto*.
 
 Con el inicio de la parte ejecutoria inicia el *análisis* que impulsa a la *arquitectura*, este último define cuáles son los equipos (respaldo, procesamiento, comunicación a nivel) necesarios.
@@ -33,6 +29,6 @@ Posterior a la *integración* se necesita realizar *pruebas de sistemas*, *impla
 
 Las últimas 7 forman parte de la **infraestructura** y las primeras 4 forman parte de la **administración**
 
-![Ciclo de Vida de la Informática](Ciclo%20de%20Vida%20de%20la%20Informatica.png)
+![Ciclo de Vida de la Informática](resources/Ciclo_Vida_Informatica.png)
 
 Aparte de estas 10, en el área de infraestructura, se puede incluir al *ser humano*, que es gracias a quien llega a funcionar la infraestructura como tal.

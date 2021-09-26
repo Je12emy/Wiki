@@ -9,13 +9,13 @@ Literalmente en COBIT 5 se realiza una separación entre el **Gobierno y la Gest
 
 **COBIT 5 para Riesgos** busca generar actividades para la gestión de riesgos, esta es su meta principal. Esta versión cuenta con varios fundamentos:
 
-![Base para COBIT 5 para Riesgos](La%20Base%20de%20COBIT%205.png)
+![Base para COBIT 5 para Riesgos](resources/base_COBIT_5.png)
 
 Entonces COBIT 5 para Riesgos se alimenta de estos 3, así extrayendo un poco de cada uno. 
 
 Se puede extraer la composición de COBIT 5 de la siguiente manera según el área donde se aplica.
 
-![Composición de COBIT 5](Composici%C3%B3n%20de%20COBIT%205.png)
+![Composición de COBIT 5](resources/Composicion_COBIT_5.png)
 
 Recordemos que con **Marco Interno** se refiere a los siguientes conceptos:
 
@@ -28,7 +28,7 @@ Recordemos que con **Marco Interno** se refiere a los siguientes conceptos:
 
 Para visualizar se puede explicar la estructura completa de COBIT en un cubo.
 
-![Cubo de COBIT](Cubo%20de%20COBIT%205.jpg)
+![El Cubo de COBIT 5](https://fferia.files.wordpress.com/2016/10/cobit-cubo.jpg)
 
 Acá entonces se cuenta con los siguientes aspectos:
 
@@ -42,7 +42,7 @@ Acá entonces se cuenta con los siguientes aspectos:
 
 Como tal **COBIT 4.1** no realiza la separación entre Gobernanza y Gestión.
 
- ![COBIT 4.1 VS COBIT 5](COBIT%205%20vs%204.png)
+ ![COBIT 4.1 VS COBIT 5](resources/COBIT_5_vs_4.png)
 
 ## Marco de Trabajo
 
@@ -66,7 +66,7 @@ Se basa en **5 principios**:
 - **Hacer Posible un Enfoque Holístico:** Da importancia a todas las partes de la organización.
 - **Separar al Gobierno de la Gestión.**
 
-![Principios de COBIT](Principios%20de%20COBIT%205.png)
+![Principios de COBIT](resources/Principios_COBIT_5.png)
 
 ## Habilitadores
 
@@ -79,7 +79,7 @@ Asisten a la obtención del gobierno de TI, mediante estructuras, procesos y otr
 - **Estructura Organizacional:** Cual es la estructura organizacional para cumplir con el COBIT 5.
 - **Personas, Habilidades y Competencias:** Evitar la centralización de conocimiento ni de responsabilidades, determinar cuales son las habilidades y competencias necesarias que tiene un puesto de trabajo.
 
-![Habilitadores de COBIT](Habilitadores%20de%20COBIT%205.png)
+![Habilitadores de COBIT](resources/Habilitadores_COBIT_5.png)
 
 ## Catalizadores
 
@@ -92,7 +92,7 @@ Son factores que influyen de forma individual o en forma grupal, si es que algo 
   - ¿Se aplican buenas prácticas?
 - En azul claro se muestran los requerimientos a **nivel empresa** para evaluar estos temas.
 
-![Procesos Catalizadores de COBIT](Catalizadores%20de%20COBIT%205.png)
+![Procesos Catalizadores de COBIT](resources/Catalizadores_COBIT_5.png)
 
 ## Metas
 
@@ -126,7 +126,7 @@ Estos tienen una relación, donde el **Gobierno** va a generar la orientación h
 
 
 
-![Gobernanza y Gestión en COBIT](Gobernanza%20y%20Gesti%C3%B3n%20en%20COBIT%205.png)
+![Gobernanza y Gestión en COBIT](resources/Gobernanza_Gestión_COBIT_5.png)
 
 Viéndolo con un ejemplo sobre el tema de Obsolescencia tecnológica, esto no involucra unicamente identificarla sino como abordarla y enfrentarla. Entonces el flujo inicia por **Gestión** identificándola y subiéndola al **Gobierno**, este luego se encarga de **Supervisar y Evaluar** las estrategias propuestas por la **Gestión** para abordar este tema es el correcto, si no lo es tiene que **Orientar** para asegurar el alineamiento tanto a nivel TI-Empresarial sino que alineamiento interno de TI. Si no se cumplen los objetivos de TI, menos se cumplen los de gobierno corporativo y esto es una **cadena**.
 
@@ -144,8 +144,6 @@ Viendo cada proceso, se puede usar como base en la **Gestión o Gobierno de TI**
 
 COBIT establece un conjunto de roles necesarios para cada cargo, entonces indica que debería de existir una Junta Directiva, un CEO, Director General Financiero, un CIO, un CISO, Jefe de Recursos Humanos, Auditoria, etc.
 
-
-
 ### Responsabilidades por Cargo - Matriz
 
 COBIT define los roles y responsabilidades de cada cargo sobre una tarea mediante una matriz RACI.
@@ -157,7 +155,7 @@ COBIT define los roles y responsabilidades de cada cargo sobre una tarea mediant
 
 Actualmente ha surgido un rol adicional, una **S**(Supervisor). Esta matriz en aplicación (para *APO12*) se ve de la siguiente manera:
 
-![RACI APO12](Matriz%20RACI%20de%20COBIT%205.jpeg)
+![RACI APO12](resources/Matriz_RACI_COBIT_5.jpeg)
 
 - Acá se pueden ver 2 tonos de colores, el azul oscuro corresponde a la administración y el café corresponde al departamento de TI.
 - Un problema es que esta matriz indica el **que**, y no el **como** hacerlo. Esto es tarea de la empresa.
@@ -166,19 +164,19 @@ Actualmente ha surgido un rol adicional, una **S**(Supervisor). Esta matriz en a
 
 Mecanismo mediante el cual se transforman las necesidades de la empresa, en metas corporativas, que se trasladan en metas de TI y que finalmente se transforman en metas para los habilitadores.
 
-![Cascada de Metas de COBIT](Cascada%20de%20Metas%20de%20COBIT%205.png)
+![Cascada de Metas de COBIT](resources/Cascada_Metas_COBIT_5.png)
 
 ### Relaciones en la Cascada de Metas de COBIT
 
 Los objetivos cuentan con 2 tipos de relaciones, la primaria (**P**) y la secundaria (**S**), que indica un peso según un objetivo del **Gobierno**. 
 
-![Relación entre la Cascada de Objetivos de COBIT](Relaci%C3%B3n%20entre%20objetivos.jpg)
+![Relación entre la Cascada de Objetivos de COBIT](resources/Relación_entre_objetivos.jpg)
 
 ## Diagrama de Implementación de COBIT
 
 COBIT se implementa en un ciclo de **7 pasos con 3 dimensiones** adicionales. 
 
-![Ciclo de Implementación de COBIT](Ciclo%20de%20vida%20de%20COBIT%205.png)
+![Ciclo de Implementación de COBIT](resources/Ciclo_vida_COBIT_5.png)
 
 ## Procesos
 

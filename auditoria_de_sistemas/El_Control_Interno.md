@@ -48,7 +48,7 @@ La ley 8292 indica que la responsabilidad del sistema de control recae sobre el 
 
 Debido a que la ley 8292 es generalmente aplicada en entidades públicas dentro de C.R., existen otras leyes que deben ser cumplidas por los funcionarios públicos, la Ley General de Administración Pública (Ley 6227) define dos principios.
 
-![Principios de la Ley 6227](Control%20Interno%20Principios.png)
+![Principios de la Ley 6227](resources/control_interno_principios.png)
 
 ## Regulación Interna
 
@@ -64,7 +64,7 @@ Todo aquello a nivel documental que se genera dentro de una institución que com
 
 Según el contexto, se podría ver de la siguiente manera.
 
-![Como Aplicar CI](Control%20Interno%20en%20una%20Empresa.png)
+![Como Aplicar CI](resources/control_interno_empresa.png)
 
 ## Ambiente de Control
 
@@ -89,7 +89,12 @@ Comprender el riesgo como una amenaza es la forma más simple para identificarlo
 
 Estos pueden identificados o mapeados mediante una matriz de riesgos.
 
-![Matriz de Riesgo Basica](Matriz%20de%20Riesgo%20Basica%20de%20Auditor%C3%ADa.png)
+| Dominio                         | Aspecto Evaluado                               | Riesgos                                                                                                                 | Control Mitigador                                                                                                                                                                                                           |
+| ----                            | -----                                          | ----                                                                                                                    | ----                                                                                                                                                                                                                        |
+| Seguridad de Telecomunicaciones | Gestion de la seguridad en las redes           | Afetación del servicio, perdida de ancho de banda por conexión indebida de empleados                                    | Instruir a los empleados que la red BN-WIFI es de uso exclusivo para los clientes del BNCR                                                                                                                                  |
+| Seguridad de Telecomunicaciones | Gestion de la seguriddad en las redes          | Lentitud en el servicio por mensajes que consumen mucho ancho de banda de otros servicos                                | Definir formato, tamaño máximo y horario de servicio para no competir con servicios bancarios. Además se debe considerar la utilización y existencia de canales alternativos o redundantes para la transmisión de mensajes. |
+| Seguridad de Telecomunicaciones | Intercambio de información con partes externas | Perdidas por fallas en las comunicaciones entre los equipos del proveedor y los del Banco y no poder atender al cliente | Establecer procedimientos y protocolos de actuación para el tratamiento de fallas en las líneas de comunicación                                                                                                             |
+
 
 ### Actividades de Control
 
@@ -97,7 +102,10 @@ Una vez se han identificado a aquellos riesgos que plagan a la empresa o proyect
 
 Esto se logra mediante *políticas y procedimientos* que aseguran que son implementados estos controles emitidos por los mandos superiores para el cumplimiento de los objetivos del control interno.
 
-![Actividades de Control](Actividad%20de%20Control.png)
+| Código | Actividad de Control                                                                                                                                                                                                                                                    | Responsable              | Riego                                                                                                                                                                                 |
+| ---    | ---                                                                                                                                                                                                                                                                     | ---                      | ---                                                                                                                                                                                   |
+| SI-01  | Asegurar la eliminación de todos los acceso y privilegios de usuario, así como la solicitud de carné, llaves, tarjetas de acceso, artículos o dispositivos de aquellos funcionarios con medidas cautelares o que hayan terminado su contrato laboral con al institución | Jegaturas y Supervisores | Disminución de los recursos financieros debido a pérdidas o estafas por usos malintencionados de los recursos informáticos o compromiso de la información por parte de exfuncionarios |
+| SI-02  | Gestionar la inactivación de usuarios que se ausentes por más de 5 días hábiles (vacaciones, permisos temporales, incapacidades)                                                                                                                                        | Supervisores             | Pérdidas o estagas por usos malintencionados de los recursos informáticos de la institución por parte de usuarios fuera de su jornada de trabajo                                      |
 
 #### Requisitos de una Actividad de Control
 
@@ -109,13 +117,13 @@ Esto se logra mediante *políticas y procedimientos* que aseguran que son implem
 
 ## Sistemas Información dentro del control interno
 
-Hace referencia a la\*\* gestión de la información\*\*, tanto física como electrónica. Incluye la *Calidad de la Información* y la *Comunicación de la Información*
+Hace referencia a la **gestión de la información**, tanto física como electrónica. Incluye la *Calidad de la Información* y la *Comunicación de la Información*
 
 ### Calidad de la Información
 
 Basado en la *Ley 8292* se refiere a los siguientes 3 conceptos clave:
 
-* \*\*Confiabilidad: \*\*
+* **Confiabilidad:**
   * La información debe ser confiable y con fuentes fiables.
   * Debe de encontrarse libre de errores, defectos, omisiones y sobre todo modificaciones.
 * **Oportunidad:** Debe de ser recopilada, generada y procesada en el tiempo y momento adecuado.

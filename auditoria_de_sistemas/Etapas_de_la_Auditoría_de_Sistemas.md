@@ -58,7 +58,7 @@ Acciones por Ejecutar:
 * Pruebas Sustantivas.
 * Reporte y Seguimiento.
 
-Acá entra el juego el [[Ciclo de Vida de la Auditoria de Sistemas]] que habla sobre la ejecución.
+Acá entra el juego el  [Ciclo de Vida de la Auditoria de Sistemas](Ciclo_de_Vida_de_la_Auditoria_de_Sistemas.md) que habla sobre la ejecución.
 
 Dentro de la ejecución de la auditoria se encuentran las siguientes etapas:
 
@@ -98,7 +98,8 @@ Busca valorar las funciones y accionar del área o proceso de estudio, permitien
 * Detectivo.
 * Correctivo.
 
-*Nota:* Recordemos que\*\* Punto de control == Acción Mitigadora\*\*. *Nota:* Integrar == Correctivo.
+*Nota:*  Recordemos que ** Punto de control == Acción Mitigadora**.
+*Nota:*  Integrar == Correctivo.
 
 ### Pruebas en la Ejecución de la Auditoria
 
