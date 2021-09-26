@@ -10,6 +10,7 @@ Este es un repositorio de apuntes y notas sobre diferentes temas, abarca tanto c
 ## Cursos
 
 * [SQL y MySQL](mysql/curso_sql_mysql.md)
+* [How Git Works](how_git_works/How_Git_Works.md)
 
 ## Como Usar Este Repositorio
 
@@ -22,6 +23,7 @@ Este además te permite visualizar como todos los apuntes se relacionan entre si
 ![Obsidian Graph](https://i.imgur.com/ThinrFX.png)
 
 Entre otras recomendaciones se encuentra [vim/neovim](https://neovim.io/) con [vimwiki](https://github.com/vimwiki/vimwiki) (Mi editor de texto actual), [Typora](https://typora.io/) y [Visual Studio Code](https://code.visualstudio.com/)
+
 ## Como Contribuir
 
 Si eres estudiante de la carrera de Ingeniería en Informática puedes contribuir a este repositorio con tus apuntes mediante un fork y pull request, mi objetivo con este repositorio es poder crear una fuente de conocimiento para estudiantes de informática.
