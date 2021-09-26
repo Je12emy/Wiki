@@ -9,7 +9,7 @@ Este es un repositorio de apuntes y notas sobre diferentes temas, abarca tanto c
 
 ## Cursos
 
-* [SQL y MySQL](mysql/Curso de SQL y MySQL.md.md)
+* [SQL y MySQL](mysql/curso_sql_mysql.md)
 
 ## Como Usar Este Repositorio
 
