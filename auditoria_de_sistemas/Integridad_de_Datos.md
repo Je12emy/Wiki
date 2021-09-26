@@ -58,4 +58,4 @@ Se tienen los siguientes elementos para asegurar la calidad.
   * Selección de sistemas y proveedores que cumplan con las regulaciones vigentes.
   * Realizar copias de seguridad, resguardarlas en una ubicación segura y verificar la recuperación de todos los datos.
 
-![[resources/Pilares_Integridad_Datos.png]]
+![Pilares_Integridad_Datos](resources/Pilares_Integridad_Datos.png)

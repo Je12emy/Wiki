@@ -36,7 +36,7 @@ Se necesita tanto el origen y destino, si no un dato adicional que es el **facto
 
 *Una pista de auditoria no es siempre de manera correctiva, sino de manera preventiva simultáneamente*
 
-![[resources/Flujo_Pistas_Auditoria.png]]
+![Flujo de Pistas de Auditoria](resources/Flujo_Pistas_Auditoria.png)
 
 ## Características
 
@@ -60,4 +60,4 @@ Se encuentran 4 aspectos básicos.
 
 A la derecha las pistas nos dejan evidencias sobre cada transacción, donde se busca como objetivo un elemento a la izquierda.
 
-![[resources/Pistas_Auditoria_Objetivos.png]]
+![Pistas_Auditoria_Objetivos](resources/Pistas_Auditoria_Objetivos.png)
