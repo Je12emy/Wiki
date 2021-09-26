@@ -7,8 +7,9 @@ Este es un repositorio de apuntes y notas sobre diferentes temas, abarca tanto c
 * [Cuarta Generación](cuarta-generacion-3/readme.md.md): Administración de bases de datos de Oracle.
 * [Auditoria de Sistemas](auditoria_de_sistemas/readme.md): Gestión de riesgos de TI, alineación entre TI, etc.
 
-## Udemy
+## Cursos
 
+* [SQL y MySQL](mysql/Curso de SQL y MySQL.md.md)
 
 ## Como Usar Este Repositorio
 
