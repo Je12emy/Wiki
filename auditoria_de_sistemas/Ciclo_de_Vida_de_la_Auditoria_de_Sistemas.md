@@ -22,13 +22,13 @@ La auditoria como tal se encuentra por **fuera** de la empresa (que se encuentra
 
 Esta es la ubicación ideal de la auditoria y esto significa que esta evalúa a la empresa o todo aquello por debajo de la *Gerencia General*. Cuando la auditoría se encuentra dentro de la empresa, se da un proceso viciado (puede ser influenciado) que resulta ilegal.
 
-![[resources/Estructura_Organizativa_Ideal.png|Estructura Organizativa]]
+![Estructura_Organizativa_Ideal](resources/Estructura_Organizativa_Ideal.png)
 
 ### Estructura Interna
 
 La Auditoría General se encuentra compuesta por los siguientes roles, como dato curioso el curso actual se centra en la Gerencia de Fiscalización
 
-![[resources/Composición_Departamento_Auditoría_General.png]]
+![Composición_Departamento_Auditoría_General](resources/Composición_Departamento_Auditoría_General.png)
 
 A continuación se detallan las funciones de cada uno.
 

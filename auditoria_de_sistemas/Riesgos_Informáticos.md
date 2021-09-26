@@ -78,7 +78,7 @@ Generar e implementar una metodología de análisis de riesgos que permita evalu
 
 Integrar el tema de que el **proveedor** puede reducir su exposición al riesgo y que estos también aplican su propia metodología de análisis de riesgos.
 
-![[resources/Mapa_Ideas_Riesgo_Informatica.png]]
+![Mapa_Ideas_Riesgo_Informatica](resources/Mapa_Ideas_Riesgo_Informatica.png)
 
 ## Otros Aspectos a Considerar
 
