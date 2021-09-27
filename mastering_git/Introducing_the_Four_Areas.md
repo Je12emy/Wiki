@@ -1,6 +1,6 @@
-[#](#) The Four Areas: Introduction
+# The Four Areas: Introduction
 
-We will revisit the way Git thinks in this module, not on technical features. This is what we did in the preivous course [[how_git_works/How_Git_Works]].
+We will revisit the way Git thinks in this module, not on technical features. 
 
 ## Note About the CLI
 

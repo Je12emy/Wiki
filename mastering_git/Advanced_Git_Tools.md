@@ -1,4 +1,4 @@
-[#](#) The Four Areas: Advanced Tools
+# The Four Areas: Advanced Tools
 
 ## Stashing Data
 
