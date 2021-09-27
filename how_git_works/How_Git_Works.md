@@ -1,6 +1,6 @@
 # How Git Works
 
-Learn the inner working of Git, link to the original course [here](https://www.pluralsight.com/courses/how-git-works)
+Learn the inner working of Git, link to the original course [here](https://www.pluralsight.com/courses/how-git-works), if you don't know what Git is check [this awesome playlist](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV) 
 
 ## Contents
 
