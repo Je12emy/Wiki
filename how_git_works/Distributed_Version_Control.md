@@ -63,7 +63,7 @@ When other peers push into the remote repository things may get complicated, sin
 
 Let's see why rebasing is a tricky tools to use, if we rebase locally two branches the history between the local and remote repositories may not match and even the old objects which where coppied by rebase will get garbage collected. We already viewed how to solve merge conflicts by fetching and merging but this will create another identical commit which may cause duplications.
 
-[git_rebase_warning](resources/git_rebase_warning.png)
+![git_rebase_warning](resources/git_rebase_warning.png)
 
 > Never rebase shared commits.
 
