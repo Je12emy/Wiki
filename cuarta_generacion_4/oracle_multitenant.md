@@ -21,7 +21,7 @@ Acá encontraremos dos conceptos clave:
 1. **El CDB o Container Database:** Este es el contenedor de las bases de datos, se puede decir que es la raíz en donde se insertan hasta 256 bases de datos, al actualizarlo todas las PDBs insertadas recibirán el parche. 
 2. **Los PDBs o Plugable Database:** Estas son las sub-bases de datos, se les llama `Pluggable Databases`, puesto que pueden ser insertadas o removidas como sea necesario. En estas sub-bases de datos se crean usuarios y sus objetos correspondientes, 
 
-![Arquitectura Multitenant](https://emarcel.com/wp-content/uploads/2015/12/multitenant_db12c.png)
+![Arquitectura Multitenant](https://www.oracle.com/technetwork/articles/servers-storage-admin/f1-2016882.gif)
 
 *Nota:* En el `CDB` no se deberían de crear usuarios, sino en sus sub-bases de datos correspondientes, debido a que el contenedor no puede contener tablas.
 *Nota:* Para acceder a cada una de estas `PDBs` se debe de configurar el servicio `tnsnames` con registros de cada una.
