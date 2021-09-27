@@ -66,18 +66,8 @@ nothing to commit, working tree clean
 
 This is how it looks like.
 
-```mermaid
-graph LR
-    subgraph ide1 [Repository]
-    id3_1[menu.txt]
-    end
-    subgraph id2 [Index]
-    id2_1[menu.txt] --> |commit| id3_1
-    end
-    subgraph id3 [Work Dir.]
-    id1_1[menu.txt] --> |add| id2_1
-    end
-```
+![Moving through the 3 main areas](https://i.imgur.com/aV8vtZW.png)
+
 
 For all this steps we can check how each differs with the `git diff`command.
 
