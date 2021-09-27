@@ -12,7 +12,8 @@ Este es un repositorio de apuntes y notas sobre diferentes temas, abarca tanto c
 
 * [SQL y MySQL](mysql/curso_sql_mysql.md)
 * [How Git Works](how_git_works/How_Git_Works.md)
-
+* [Getting Started with Docker](docker_getting_started/Getting_Started_with_Docker.md)
+ 
 ## Como Usar Este Repositorio
 
 Estos apuntes son de texto plano con formato `.md`, esto con el objetivo de evitar formatos propietarios propensos a fallar en caso de que el programa del que dependen llegue a cambiar, ej `.docx`. Debido a este es posible leerlos con cualquier editor de texto, para obtener la mejor experiencia posible se recomienda [Obsidian](https://obsidian.md/), ya que la mayoría de apuntes fueron redactados en este y proporciona varias funciones de autocompletado para enlaces entre apuntes, ademas proporciona una aplicación móvil para llevar tus apuntes contigo cuando viajes.
