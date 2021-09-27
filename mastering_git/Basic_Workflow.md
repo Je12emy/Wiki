@@ -1,6 +1,6 @@
 # The Four Areas: Basic Workflow
 
-In the [Introduction to the Four Areas#Introducing the Four Areas|last lesson](Introducing_the_Four_Areas), we talked about the two basic questions we should ask to understand how any git command works. In this module we will dive deeper into the basic commands for our git flow like checkout, moving and renaming files.
+In the [Introduction to the Four Areas](Introducing_the_Four_Areas), we talked about the two basic questions we should ask to understand how any git command works. In this module we will dive deeper into the basic commands for our git flow like checkout, moving and renaming files.
 
 ## Moving Data to the Right
 

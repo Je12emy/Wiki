@@ -44,7 +44,7 @@ This will move the branch into this specific commit, and the previous child comm
 
 ## More Reset Examples
 
-If we stage some changes, there's a few ways in which we could unstage these changes, we've already seen the [[The Four Areas: Basic Workflow#Removing Files|git rm command]], actually Git itselft recommends the `reset HEAD` command (on earlier versions) where the commit onto which the HEAD is pointing to copy it's contents which the `reset` command. Here we may apply the same flags we've already seen, in this case let's undo all our changes, so a `--hard` flag should be ok.
+If we stage some changes, there's a few ways in which we could unstage these changes, we've already seen the [rm command](Basic_Workflow#Removing Files), actually Git itselft recommends the `reset HEAD` command (on earlier versions) where the commit onto which the HEAD is pointing to copy it's contents which the `reset` command. Here we may apply the same flags we've already seen, in this case let's undo all our changes, so a `--hard` flag should be ok.
 
 ```
 git status
