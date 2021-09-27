@@ -5,6 +5,7 @@ Este es un repositorio de apuntes y notas sobre diferentes temas, abarca tanto c
 ## Universidad
 
 * [Cuarta Generación](cuarta-generacion-3/cuarta_gen_3.md): Administración de bases de datos de Oracle.
+* [Cuarta Generación 4](cuarta_generación_4/cuarta_generacion_4): Administración de bases de datos de Oracle a fondo.
 * [Auditoria de Sistemas](auditoria_de_sistemas/auditoria_de_sistemas.md): Gestión de riesgos de TI, alineación entre TI, etc.
 
 ## Cursos
