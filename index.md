@@ -15,7 +15,7 @@ Este es un repositorio de apuntes y notas sobre diferentes temas, abarca tanto c
 
 ## Como Usar Este Repositorio
 
-Estos apuntes son de texto plano con format `.md`, esto con el objetivo de evitar formatos propietarios propensos a fallar en caso de que el programa del que dependen llegue a cambiar, ej `.docx`. Debido a este es posible leerlos con cualquier editor de texto, para obtener la mejor experiencia posible se recomienda [Obsidian](https://obsidian.md/), ya que la mayoría de apuntes fueron redactados en este y proporciona varias funciones de autocompletado para enlaces entre apuntes, ademas proporciona una aplicación móvil para llevar tus apuntes contigo cuando viajes.
+Estos apuntes son de texto plano con formato `.md`, esto con el objetivo de evitar formatos propietarios propensos a fallar en caso de que el programa del que dependen llegue a cambiar, ej `.docx`. Debido a este es posible leerlos con cualquier editor de texto, para obtener la mejor experiencia posible se recomienda [Obsidian](https://obsidian.md/), ya que la mayoría de apuntes fueron redactados en este y proporciona varias funciones de autocompletado para enlaces entre apuntes, ademas proporciona una aplicación móvil para llevar tus apuntes contigo cuando viajes.
 
 ![Obsidian](https://i.imgur.com/ljr7XUK.png)
 
@@ -32,3 +32,7 @@ Si eres estudiante de la carrera de Ingeniería en Informática puedes contribui
 ## ¿Por qué hacen falta cursos?
 
 Mis apuntes originales desde que inicie la carrera hace 4 años se encuentran en OneNote por lo cual tendré que convertirlos lentamente a `.md`, también empece a digitalizar mis apuntes hace más de 1 año por lo cual ciertos cursos harán falta a no ser que alguien contribuya con sus apuntes (Para esto me encargare de que cumplan con cierto nivel de calidad). También en este repositorio existen apuntes que aun no he publicado en Github por que no se encuentran listos del todo o son simplemente apuntes personales.
+
+## ¿Puedo imprimir estos apuntes?
+
+Editores de texto como Obsidian y Visual Studio Code te permiten convertir archivos de formato `.md` a `.pdf` pero puedes convertir a cualquier otro formato como `.docx` o `.tex` con [Pandoc](https://pandoc.org/)
