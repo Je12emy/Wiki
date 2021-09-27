@@ -10,9 +10,9 @@ Este es un repositorio de apuntes y notas sobre diferentes temas, abarca tanto c
 
 ## Cursos
 
-* [SQL y MySQL](mysql/curso_sql_mysql.md)
-* [How Git Works](how_git_works/How_Git_Works.md)
-* [Getting Started with Docker](docker_getting_started/Getting_Started_with_Docker.md)
+* [SQL y MySQL](mysql/curso_sql_mysql.md): Introducción a bases de datos SQL con Mysql.
+* [How Git Works](how_git_works/How_Git_Works.md): Aprende el modelo de Git.
+* [Getting Started with Docker](docker_getting_started/Getting_Started_with_Docker.md): Hola mundo con Docker.
  
 ## Como Usar Este Repositorio
 
