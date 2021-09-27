@@ -22,10 +22,7 @@ If we want to understand any Git command, we need to ask ourselved two basic que
 
 It doesn't matter what any command is, if you can anwser this questions, then you will undestand it.
 
-```mermaid
-graph LR
-id[stash] -.- id1[Working Directory] --- id2[Index] --- id3[Repository]
-```
+![The Four Areas](https://i.imgur.com/XUIbg8q.png)
 
 ## The Working Area
 
