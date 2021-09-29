@@ -184,7 +184,7 @@ Recordemos que [una instancia](../cuarta-generacion-3/Instancia_de_Oracle) es un
 
 ![Oracle Listener](https://www.oracletutorial.com/wp-content/uploads/2019/07/Oracle-Listener.png)
 
-Podemos ejecutar comandos sobre este `Listener` directamente, para abrir la linea de comando de este se utiliza el commando `lsnrctrl`, en donde tendremos acceso a comandos como `stop`, `start`, `status`, `version` y `quit`.
+Podemos ejecutar comandos sobre este `Listener` directamente, para abrir la linea de comando de este se utiliza el commando `LSNRCTRL`, en donde tendremos acceso a comandos como `stop`, `start`, `status`, `version` y `quit`.
 
 Para crear una base de datos se cuentan con los siguientes pasos.
 
