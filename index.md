@@ -14,6 +14,7 @@ Este es un repositorio de apuntes y notas sobre diferentes temas, abarca tanto c
 * [How Git Works](how_git_works/How_Git_Works.md): Aprende el modelo de Git.
 * [Mastering Git](mastering_git/Mastering_Git): Aprende Git a fondo y sus 4 areas.
 * [Getting Started with Docker](docker_getting_started/Getting_Started_with_Docker.md): Hola mundo con Docker.
+* [Java Orientado a Objetos](java_oop/Java_Orientado_a_Objetos): Introducción al paradigma de Programación Orientada a Objetos (OOP) con Java.
  
 ## Como Usar Este Repositorio
 
