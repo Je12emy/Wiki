@@ -125,6 +125,7 @@ Se puede tener _n_ despachadores, pero si se tienen más despachadores de los qu
 > When running Oracle Multi-Threaded Server, one or more dispatcher processes (named D001, D002, and so on) are responsible for receiving connection requests from the listener and directing each request to the least busy Shared Server process. If the listener cannot find an available D_nnn_ process, a dedicated server process is created instead. The actual number of Dispatcher processes running is determined by the setting of the _INIT.ORA_ parameter MTS_MAX_DISPATCHERS.
 
 # Archivos de Traza
+
 > Trace File are trace (or dump) file that Oracle Database creates to help you diagnose and resolve operating problems.
 
 Vamos a encontrar varios tipos de trazas.
