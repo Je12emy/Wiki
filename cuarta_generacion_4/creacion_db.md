@@ -323,6 +323,8 @@ Como `SYSTEM` vamos a ejecutar los siguientes scripts.
 @?/sqlplus/admin/help/helpus.sql
 ```
 
+## 7 Verificación
+
 Podemos ahora ver que ya tenemos archivos físicos para nuestra base de datos nueva.
 
 ```
@@ -358,13 +360,7 @@ The command completed successfully
 
 Así como consultar información de nuestro diccionario
 
-```
-SELECT name from v$database;
-
-NAME
----------
-TST
-```
+![Verificación Final](https://i.imgur.com/JkJ7Dow.png)
 
 Crear objetos.
 
@@ -395,3 +391,18 @@ SELECT * FROM foo;
 ```
 
 Para más información puedes revisar la [documentación oficial de Oracle](https://docs.oracle.com/cd/B28359_01/server.111/b28310/create003.htm#ADMIN11073)
+
+Para volver a inicar esta BD podemos usar.
+
+```
+startup pfile=D:\\app\\jerem\\admin\\tst\\pfile\\init.ora
+ORACLE instance started.
+
+Total System Global Area 6814535680 bytes
+Fixed Size                  2188688 bytes
+Variable Size            3539995248 bytes
+Database Buffers         3254779904 bytes
+Redo Buffers               17571840 bytes
+Database mounted.
+Database opened.
+```
