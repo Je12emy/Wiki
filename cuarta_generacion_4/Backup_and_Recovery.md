@@ -160,3 +160,106 @@ Encontramos los siguientes parámetros de inicio relevantes:
 | Permite realizar respaldos online                           | La BD debe de ser apagada.                                 |
 | Partes de la BD pueden ser restauradas                      | Requiere restaurar a toda la BD                            |
 | Todas las transacciones son recuperables                    | Todos los cambios desde el ultimo respaldo son recuperados |
+
+## Sobre Respaldos Lógicos
+
+Aca es posible respaldar objetos especificos de la base de datos y se utiliza la herramienta Export, que para realizarlo es necesario tener a la base de datos abierta pero esta herramienta no comprueba la validez de las relaciones.
+
+* Los respaldos son bastante rápidos.
+* Se puede detectar la corrupción en los bloques, ya que el proceso de export fallara.
+* Protege de fallos de usuarios, por ejemplo si se borra una fila o toda la tabla, es fácil recuperarla por medio del import.
+* Se puede determinar los datos a exportar con gran  "flexibilidad", desde la versión 10 se introdujo el comando `EXP` que para entonces proporcionaba funcionalidad limitada.
+* Se pueden hacer exports completos, incrementales y acumulativos.
+* Son portables que se pueden llevar de una base de datos a otra, pero se debe de tener cuidado con el formato, por ejemplo la configuración del lenguaje y configuración de región del sistema operativo huesped, por lo cual es ideal que ambas bases de datos cuenten con la misma configuración regional.
+
+### Prametros de Export
+
+| Parámetro | Defecto        | Descripción                                                                                           |
+| --        | --             | --                                                                                                    |
+| USERID    |                | El username/password del usuario que realiza el export                                                |
+| GRATNS    |                | Indica si se exportan los permisos.                                                                   |
+| FILE      | expdat.dmp     | Nombre del archivo dichero destino, la extensión es importante                                        |
+| ROWS      | YES            | Permite llevarse la estructura y los datos, si solo se quiere llevar la estructura se usa el valor no |
+| COMPRESS  | YES            | Comprime los bloques de datos                                                                         |
+| FULL      | NO             | Se exporta toda la base de datos                                                                      |
+| OWNER     | usuario actual | Se exporta el contenido dentro de un esquema                                                          |
+| TABLES    | indefinied     | Se exporta una lista especifica de listas                                                             |
+
+#### Modos de Export
+
+Se puede usar esta utilidad con 3 modos de exportación
+
+* Modo Tabla: Exporta todas las definiciones de la tabla (estructura), los datos, los derechos del propietarios, los indices,las restricciones y los triggers asociados a una tabla.
+* Modo Usuarios: Exporta todos los objetos del modo tabla, mas los clusters, enlaces de la BD, vistas, sinonimos, seucencias, procedimientos **de un usuario** o de una lista de usuarios.
+* Modo Full: Incluye al modo tabla, usuario y todo el contenido de la base de datos.
+    * En este se divide en 3 casos: Completo, Acumulativo o Incremental.
+
+```sql
+exp userid=system/manager full=y inctype=complete constraints=Y file=full_export_filename;
+```
+
+Exporta solo las tablas que han sido modificadas desde la ultima exportación acumulativa o completa, y registra los detaooles de exportación para cáda tabla exporta. Despues de cada exportación acumulativa, no se necesitan las exportaciones incrementales de la BD anteriores.
+
+```sql
+exp userid=system/manager full=y inctype=...
+```
+### Parametros de Import
+
+El comando de importación es muy similar y los parametros son iguales
+
+| Parametro | Defecto    | Descripción                                                                                                                                  |
+|           |            |                                                                                                                                              |
+| SHOW      | NO         | Hace una previsualización del contenido por importar, sin importarlo.                                                                        |
+| IGNORE    | YES        | Indica si ingorar errores al importar un objeto, asi no se escribe sobre objetos que se encuentran en el destino                             |
+| GRANTS    | YES        | Indica si se importan tambien los privilegios                                                                                                |
+| INDEXES   | YES        | Indica si se importan tambien los indices                                                                                                    |
+| ROWS      | YES        | Indica si se importan las filas de las tablas                                                                                                |
+| FULL      | NO         | Indica si se importa todo el archivo                                                                                                         |
+| FROMUSER  | Indefinido | Indica de donde se van a traer los datos                                                                                                     |
+| TOUSER    | Indefinido | A donde se va a dejar el contenido por importar, si se omite se usara al usuario realizando la importación                                   |
+| TABLES    | indefinido | Indica una lista de tablas por importar                                                                                                      |
+| PARFILE   |            | Este es un archivo de parametro, pero no es como los de la base de datos, es un archivo nombre-par que le indica parametros al import-export |
+
+```
+imp userid=sys/passwd inctype=system full=Y fuke=export_filename
+```
+
+- [x] Exportar el esquema HR completo con registros, constraints y commprimido, cualquier nombre de archivo.
+- [x] Exportar de las tablas: scott.Employees y scott.Departmanets, incluyendo sus datos
+- [ ] Exportar las tablas: hr.Employees y hr.Departments, pero unicamnete la estructura.
+- [ ] Crear un usuario semana9 sobre el el cual importar las tablas scott.employees y scott.departments sin datos.
+
+Para exportar al esquema HR se usa el siguiente comando, agregar parámetros omitidos
+
+```
+exp.exe userid=sysdba/root owner=HR file=hr_exp.dmp
+```
+
+Para exportar a las tablas `Employees` y `Departments` de `Scott` incluyendo sus registros se usa el siguiente comando.
+
+```
+exp.exe userid=sys/root tables=scott.emp,scott.dept rows=yes file=employees_deparmtents_exp.dmp 
+```
+
+Para hacer ese mismo export sin los registros:
+
+```
+exp.exe userid=sys/root tables=hr.employees,hr.departments rows=no file=hr_employees_deparmtents_no_data_exp.dmp 
+```
+
+Para entonces importar las tablas se utiliza:
+
+```
+imp.exe userid=sys/root tables=EMPLOYEES,DEPARTMENTS file=hr_employees_deparmtents_no_data_exp.dmp touser=semana9 fromuser=HR 
+```
+
+Verificación:
+
+```sql
+SELECT table_name FROM dba_tables WHERE owner = 'SEMANA9';
+
+TABLE_NAME
+------------------------------
+EMPLOYEES
+DEPARTMENTS
+```
