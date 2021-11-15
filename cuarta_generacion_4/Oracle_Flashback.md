@@ -68,7 +68,7 @@ Podemos ver estos datos, asumiendo que aun nos encontramos dentro del tiempo de 
 
 ```sql
 SELECT * FROM empleados 
-aS OF TIMESTAMP
+AS OF TIMESTAMP
 TO_TIMESMTAP ('13-03-2009 11:16:14')        -- Especificamos desde cuando queremos traer datos, debemos tener cuidado con el tiempo de flashback.
 ```
 
@@ -88,7 +88,7 @@ Podemos incluso insertar la diferencia entre las tablas.
 INSERT INTO empleados
 (
     SELECT * FROM empleados 
-    aS OF TIMESTAMP
+    AS OF TIMESTAMP
     TO_TIMESMTAP ('13-03-2009 11:16:14');
     MINUS                                   
     SELECT * FROM empleados;
@@ -99,7 +99,7 @@ Tampoco nos encontramos limitados a usar queries sin la clausula `WHERE`.
 
 ```sql
 SELECT * FROM empleados 
-aS OF TIMESTAMP
+AS OF TIMESTAMP
 TO_TIMESMTAP ('13-03-2009 11:16:14')        
 WHERE last_name = 'Chung'.
 ```
@@ -304,29 +304,70 @@ FLASHBACK TABLE employees TO BEFORE DROP RENAME TO new_employes;
 
 En este proceso de recuperación los indices y triggers de esta tabla aun estarán en la papelera, por lo cual tenemos que recuperarlos junto a esta con otra consulta usando a la papelera.
 
+Borremos una tabla de ejemplo.
+
+```sql
+DROP TABLE orders_copy;
+
+Table dropped.
+```
+
 Primero tenemos que buscar a estos dos objetos dentro de la papelera.
 
 ```sql
-SELECT  object_name,        -- "BIN$04LhcpnganfgMAAAAAANPw==$0"
-        original_name,      -- "tigger_employess..."
-        type                -- trigger
-FROM user_recyclebin        -- También tenemos v$recyclebin y dba_recyclebin
-WHERE base_object = (       -- Obtenemos el campo base_object usando el nombre original en un subquery
+SELECT  object_name,        
+        original_name,      
+        type                
+FROM user_recyclebin        
+WHERE base_object = (       
     SELECT base_object
     FROM user_recyclebin
-    WHERE original_name = '%table'
+    WHERE original_name = '&table'
 )
-AND ORIGINAL_NAME != '%table';
+AND ORIGINAL_NAME != '&table';          -- Usar este query en caso de que la papelera se encuentre algo llena
+
+SELECT object_name, original_name, type FROM user_recyclebin;
+
+OBJECT_NAME                    ORIGINAL_NAME                    TYPE
+------------------------------ -------------------------------- -------------------------
+BIN$XiIa+tWcQX2hXjfOFIBCQA==$0 IDX_ORDERS_COPY_MODE             INDEX 
+BIN$xfxLJWfYSZmPsEU4wDTVIg==$0 ORDERS_COPY                      TABLE 
 ```
 
-Siguiente recuperamos los objetos, renombrándolos desde la papelera con su nombre original
+Siguiente recuperamos a la tabla objetos, 
 
 ```sql
-ALTER TRIGGER "BIN$04LhcpnganfgMAAAAAANPw==$0" RENAME TO <nombre>;
-ALTER INDEX "BIN$04LhcpnganfgMVVVVBBBNPw==$0" RENAME TO <nombre>;
+FLASHBACK TABLE orders_copy TO BEFORE DROP;
+
+Flashback complete.
 ```
 
-Ademas estos objetos tienen que ser re-compilados ya que traen PL/SQL, esto se puede hacer desde una herramienta gráfico o con el siguiente commando.
+Esto va a traer al indice asociado, pero con un nombre distinto.
+
+```sql
+SELECT index_name, table_name FROM user_indexes WHERE  table_name = 'ORDERS_COPY';
+
+INDEX_NAME                     TABLE_NAME
+------------------------------ ------------------------------
+BIN$XiIa+tWcQX2hXjfOFIBCQA==$0 ORDERS_COPY
+```
+
+Podemos ahora renombrarlo
+
+```sql
+
+ALTER INDEX "BIN$XiIa+tWcQX2hXjfOFIBCQA==$0" RENAME TO IDX_ORDERS_COPY_MODE;
+
+Index altered.
+
+SELECT index_name, table_name FROM user_indexes WHERE  table_name = 'ORDERS_COPY';
+
+INDEX_NAME                     TABLE_NAME
+------------------------------ ------------------------------
+IDX_ORDERS_COPY_MODE           ORDERS_COPY
+```
+
+En el caso de los `triggers`, estos objetos tienen que ser re-compilados ya que traen PL/SQL, esto se puede hacer desde una herramienta gráfico o con el siguiente commando.
 
 ```sql
 ALTER TRIGGER "<name>" COMPILE;
