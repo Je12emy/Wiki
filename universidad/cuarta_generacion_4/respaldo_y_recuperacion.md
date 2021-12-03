@@ -1,4 +1,4 @@
-# Backup and Recovery
+# Respaldo y Recuperación
 
 Los respaldos y recuperaciones son un tema importante, esperemos no hacer respaldos con frecuencia pero idealmente no tendremos que hacer muchas recuperaciones. Acá es muy importante el tipo de respaldo, también hay que asegurarse que aquellos respaldos que hagamos, estén correctos
 

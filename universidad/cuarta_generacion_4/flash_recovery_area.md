@@ -1,6 +1,6 @@
 # Flash Recovery Area
 
-Siguiente el tema de [recuperación](Backup_and_Recovery), el `Flash Recovery Area` es una ubicación configurada mediante parámetros de la base de datos que nos permite de manera mas sencilla realizar y recuperar respaldos. El `FRA` es una ubicación específica para que la base de datos administre los archivos de respaldo, esto incluye archivos como backups, copia de `DATAFILES`, `CONTROLFILES`, `ARCHIVELOGS` y de esta manera permite recuperarse ante una falla más rápido, igualmente realiza funciones de limpiado sobre esta ubicación.
+Siguiente el tema de [recuperación](respaldo_y_recuperacion), el `Flash Recovery Area` es una ubicación configurada mediante parámetros de la base de datos que nos permite de manera mas sencilla realizar y recuperar respaldos. El `FRA` es una ubicación específica para que la base de datos administre los archivos de respaldo, esto incluye archivos como backups, copia de `DATAFILES`, `CONTROLFILES`, `ARCHIVELOGS` y de esta manera permite recuperarse ante una falla más rápido, igualmente realiza funciones de limpiado sobre esta ubicación.
 
 ## Configuración del FRA
 
@@ -17,10 +17,10 @@ ALTER DATABASE OPEN;
 ```
 
 1. Crear un directorio para los archivos por medio del sistema operativo, por predeterminado se llama `Flash Recovery`.
-2. Configurar los siguientes [parámetros de inicio](Parametros_de_Inicio).
+2. Configurar los siguientes [parámetros de inicio](parametros_de_inicio).
     * `DB_RECOVERY_FILE_DEST_SIZE`: Este es el tamaño del area de recuperación, aparte de definir el tamaño máximo, es usado para las estadísticas del `FRA` como el espacio disponible.
     * `DB_RECOVERY_FILE_DEST`: Esta es la ubicación del `FRA` o en donde quedaran estos archivos.
-    * `DB_FLASH_RETENTION_TARGET`: Tiempo de retención de [Oracle Flashback](Oracle_Flashback)
+    * `DB_FLASH_RETENTION_TARGET`: Tiempo de retención de [Oracle Flashback](oracle_flashback)
     * `ARCHIVE_LAG_TARGET`: Cantidad de segundos que dura la BD en generar un nuevo archivo, ej cada dos minutos se genera un `ARCHIVELOG`.
     * `LOG_ARCHIVE_DEST_1=LOCATION`: Rutas de los `ARCHIVELOG`, hace uso de otros parámetros por ejemplo: `LOG_ARCHIVE_DEST_1='LOCATION=USE_DB_RECOVERY_FILE_DEST'`
 
