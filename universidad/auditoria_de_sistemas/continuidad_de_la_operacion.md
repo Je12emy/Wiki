@@ -1,4 +1,4 @@
-# Continuidad de la Operación
+[#](#) Continuidad de la Operación
 
 Incluye garantizar que una organización conozca sus proseos, datos, información, impacto y probabilidad sobre cortes sobre la operación, entran muchos tipos de riesgos como riesgos de liquidez, imagen y tecnológicos.
 

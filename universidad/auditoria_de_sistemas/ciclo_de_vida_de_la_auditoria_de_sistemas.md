@@ -1,4 +1,4 @@
-# Ciclo de Vida de la Auditoria
+[#](#) Ciclo de Vida de la Auditoria
 
 1. Conocer el proceso o sistema: Conocer el marco normativo y sus procesos, entonces iniciar con el proceso de audición.
 2. Análisis de Recursos y Transacciones.
