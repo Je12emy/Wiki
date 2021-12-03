@@ -6,16 +6,16 @@ Learn Git in-depth with the four areas, explore the past and find your own workf
 
 ### The Four Areas
 
--   [Introducing the Four Areas](Introducing_the_Four_Areas)
--   [Basic Workflow](Basic_Workflow)
--   [Git Reset](Git_Reset)
--   [Advanced Git Tools](Advanced_Git_Tools)
+-   [Introducing the Four Areas](introducing_the_four_areas)
+-   [Basic Workflow](basic_workflow)
+-   [Git Reset](git_reset)
+-   [Advanced Git Tools](advanced_git_tools)
 
 ### History
 
--   [Exploring the Past](Exploring_the_Past)
--   [Fixing Mistakes](Fixing_Mistakes)
+-   [Exploring the Past](exploring_the_past)
+-   [Fixing Mistakes](fixing_mistakes)
 
 ### Workflow
 
--   [Finding your Workflow](Finding_your_Workflow)
+-   [Finding your Workflow](finding_your_workflow)
