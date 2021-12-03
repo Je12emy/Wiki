@@ -1,4 +1,4 @@
-# The Four Areas: Git Reset
+[#](#) The Four Areas: Git Reset
 
 ## Understanding Reset
 
