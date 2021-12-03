@@ -1,4 +1,4 @@
-Ahora que vimos las bases sobre [[Entender la OOP|que es un objeto]] y las bases de  [[Introducción a Java SE|Java SE]], podemos crear nuestra primera clase.
+[Ahora](Ahora) que vimos las bases sobre [[Entender la OOP|que es un objeto]] y las bases de  [[Introducción a Java SE|Java SE]], podemos crear nuestra primera clase.
 
 # Creando Nuestra Primera Clase
 

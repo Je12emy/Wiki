@@ -5,8 +5,9 @@ Se ha tomado este curso para entender las bases y conceptos sobre la OOP en Java
 Enlace al curso: https://platzi.com/clases/java-oop/
 
 ## Contenido 
-1. [Entender la OOP](Entender_la_OOP)
-2. [Definir Clases y sus Componentes](Definir_Clases_y_sus_Componentes)
-3. [Reutilizar Código](Reutilizar_Código)
-4. [Aplicando Abstracción](Aplicando_Abstracción)
-5. [Ensamblando Objetos al Proyecto](Ensamblando_Objetos_al_Proyecto)
+
+1. [Entender la OOP](entender_la_oop)
+2. [Definir Clases y sus Componentes](definir_clases_y_sus_componentes)
+3. [Reutilizar Código](reutilizar_código)
+4. [Aplicando Abstracción](aplicando_abstraccion)
+5. [Ensamblando Objetos al Proyecto](ensamblando_objetos_al_proyecto)

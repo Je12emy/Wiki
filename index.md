@@ -17,7 +17,7 @@ Todos mis apuntes personales
 * [How Git Works](software_development/how_git_works/index.md): Aprende el modelo de Git.
 * [Mastering Git](software_development/mastering_git/Mastering_Git): Aprende Git a fondo y sus 4 áreas.
 * [Getting Started with Docker](software_development/docker_getting_started/getting_started_with_docker.md): Hola mundo con Docker.
-* [Java Orientado a Objetos](software_development/java_oop/Java_Orientado_a_Objetos): Introducción al paradigma de Programación Orientada a Objetos (OOP) con Java.
+* [Java Orientado a Objetos](software_development/java_oop/index): Introducción al paradigma de Programación Orientada a Objetos (OOP) con Java.
 * [Testing .Net Code with Xunit.net:Getting Started](software_development/testing_net_with_xunit_gs/index.md)
 * [AWS Certified Solutions Architect](software_development/aws_certified_solutions_architech/aws_certified_solutions_architect.md)
 
