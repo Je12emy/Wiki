@@ -1,6 +1,6 @@
 # Mastering Git
 
-Learn Git in-depth with the four areas, explore the past and find your own workflow, this is a continuation of [How Git Works](../how_git_works/How_Git_Works), link to the original [course here](https://www.pluralsight.com/courses/master-git)
+Learn Git in-depth with the four areas, explore the past and find your own workflow, this is a continuation of [How Git Works](../how_git_works/index), link to the original [course here](https://www.pluralsight.com/courses/master-git)
 
 ## Content
 
