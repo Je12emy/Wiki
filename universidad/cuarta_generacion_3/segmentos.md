@@ -1,4 +1,4 @@
-# Segments
+# Segmentos
 
 Recordemos que los segmentos corresponden a agrupaciones de extensiones y todos los datos de la base de datos están almacenados en segmentos. Cuando trabajamos con segmentos, encontraremos 4 tipos de segmentos:
 

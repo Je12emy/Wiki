@@ -2,7 +2,7 @@
 
 Muchas tareas de un DBA han sido automatizadas (en el sentido de que la base se ha vuelto más inteligente) con el tiempo mediante tecnologías como `machine learning`, la tarea del DBA ha sido reestructurada a temas de arquitectura y no de datos, en donde este se enfoca en conocer los productos, arquitectura de la base de datos, procesos para definir diseñar y dar mantenimiento a una infraestructura de datos (configuración del servidor, instalación de las BD, instalación del software, networking, almacenamiento, respaldos, integración con terceros). Entonces las tareas de DBA ahora van más allá del manejo de los datos (tuneo de consultas, procedimientos, actualizaciones, etc).
 
-El DBA debe de conocer bien la [arquitectura básica de una base de datos de Oracle](../cuarta-generacion-3/cuarta_gen_3), así como arquitecturas como [Multitenant](./oracle_multitenant).
+El DBA debe de conocer bien la [arquitectura básica de una base de datos de Oracle](../cuarta-generacion-3/index), así como arquitecturas como [Multitenant](./oracle_multitenant).
 
 ## Tareas del DBA para Instalar una Base de Datos
 
@@ -51,11 +51,11 @@ Una vez creada la base de datos, es recomendado que el DBA se encargue de respal
 ### Enrolar los Usuarios.
 
 * Creación de usuarios, privilegios y roles.
-* [Administración de recursos](../cuarta-generacion-3/Resource_Management) mediante políticas.
+* [Administración de recursos](../cuarta-generacion-3/manejo_de_recursos) mediante políticas.
 
 ### Implementación del Diseño
 
-Con la creación de la base de datos y con los usuarios de la misma ya lista, ya es posible implementar las estructuras lógicas planificadas mediante la creación de los [tablespaces](../cuarta-generacion-3/Tablespace). Una vez esto este completado, se puede continuar con la creación de los objetos de la base de datos.
+Con la creación de la base de datos y con los usuarios de la misma ya lista, ya es posible implementar las estructuras lógicas planificadas mediante la creación de los [tablespaces](../cuarta-generacion-3/tablespaces_y_data_files). Una vez esto este completado, se puede continuar con la creación de los objetos de la base de datos.
 
 ### Respaldar la Base de Datos Funcional
 
@@ -63,7 +63,7 @@ Ya con una base de datos funcional y casi lista para producción, es ideal que e
 
 ### Tunear el Rendimiento
 
-Este es un punto _relativo_ en el sentido de que la Base de Datos puede proporcionar sugerencias sobre posibles modificaciones, en el pasado esta era una tarea activa para el DBA mediante la [evaluación de trazas](../cuarta-generacion-3/Architectura_de_Procesos#Archivos de Traza) y [planes de ejecución](../cuarta-generacion-3/Architectura_de_Memoria#Poniendolo en Practica). Esta tarea suele ser ideal para verificar que los aplicativos (como sera un backend) hacen consultas optimizados.
+Este es un punto _relativo_ en el sentido de que la Base de Datos puede proporcionar sugerencias sobre posibles modificaciones, en el pasado esta era una tarea activa para el DBA mediante la [evaluación de trazas](../cuarta-generacion-3/arquitectura_de_procesos#Archivos de Traza) y [planes de ejecución](../cuarta-generacion-3/arquitectura_de_memoria#Poniendolo en Practica). Esta tarea suele ser ideal para verificar que los aplicativos (como sera un backend) hacen consultas optimizados.
 
 > La culpa recae tanto en el programador y en el DBA en caso de que una consulta no este optimizada en producción, el programador por crear dicha consulta y el DBA por publicar un objeto con un mal rendimiento (ya que el programador no tiene derecho a esto).
 
@@ -180,7 +180,7 @@ With the Partitioning, OLAP, Data Mining and Real Application Testing options
 
 ## Creación de una Base de Datos
 
-Recordemos que [una instancia](../cuarta-generacion-3/Instancia_de_Oracle) es un conjunto de procesos de memoria, esta cuenta on un `Listener` que escucha las consultas de usuario y dirigirse a la base de datos que corresponde y la base de datos se encarga de almacenar los datos como tal.
+Recordemos que [una instancia](../cuarta-generacion-3/instancia_de_oracle) es un conjunto de procesos de memoria, esta cuenta on un `Listener` que escucha las consultas de usuario y dirigirse a la base de datos que corresponde y la base de datos se encarga de almacenar los datos como tal.
 
 ![Oracle Listener](https://www.oracletutorial.com/wp-content/uploads/2019/07/Oracle-Listener.png)
 
@@ -193,7 +193,7 @@ Para crear una base de datos se cuentan con los siguientes pasos.
 * Seleccionar el tamaño del bloque.
 * Utilizar un `UNDO` tablespace.
 * Desarrollar una estrategia de respaldo para proteger a la base de datos contra caidas.
-* Familizarizarse con las operaciones para [bajar y levantar la instancia de Oracle](../cuarta-generacion-3/Instancia_de_Oracle).
+* Familizarizarse con las operaciones para [bajar y levantar la instancia de Oracle](../cuarta-generacion-3/instancia_de_oracle).
 
 ### Decidir como crear una Base de Datos de Oracle
 
@@ -201,7 +201,7 @@ Para crear una base de datos se cuentan con los siguientes pasos.
 * Crear los nuevos `control files` y `redo logs` para la base de datos.
 * Crear los nuevos `data files` o borrando los datos previos en estos.
 * Definir la ubicación de la base de datos y sus archivos.
-* Contar por lo mínimo con dos copias activa de los `control files`, o sea [multiplexarlos](../cuarta-generacion-3/Monitoreo_de_Sesiones#Multiplexación de un Control File).
+* Contar por lo mínimo con dos copias activa de los `control files`, o sea [multiplexarlos](../cuarta-generacion-3/monitoreo_de_sesiones#Multiplexación de un Control File).
 * Multiplexar los `red log files`.
 * Separa los `datafiles` de sistema y los de usuario.
 

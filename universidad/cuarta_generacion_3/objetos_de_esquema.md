@@ -1,4 +1,4 @@
-# Schema Objects
+# Objetos de Esquema
 
 Ya hemos visto varias las formas de almacenar información de usuario, sin embargo existen un conjunto de parámetros que permiten alterar la forma en la cual estas utilizan el espacio disponible. Cuando creamos una tabla, automáticamente se genera un segmento de tipo `table`, el tamaño de una tabla crece con operaciones como `INSERT` y `UPDATES`. Vamos a encontrar 2 parámetros al momento de crear una tabla `PCTFREE` y `PCTUSED`.
 

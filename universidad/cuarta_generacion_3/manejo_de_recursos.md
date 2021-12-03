@@ -1,4 +1,4 @@
-# Resource Management
+# Manejo de Recursos
 
 Hablaremos de manejo de recursos a nivel de procesamiento para así dar una mejor distribución de los mismos, un DBA debe de garantizar a grupos de usuario un monto mínimo de recursos de procesamiento. Acá entonces se agrupan a usuarios en grupos específicos con recursos asignados, esto se hace mediante porcentajes, cantidad de intentos, cantidad de sesiones, limitar el grado de paralelismo (evitar que un usuario haga mucho al mismo tiempo)
 
