@@ -2,7 +2,7 @@
 
 ## Reviewing the Golden Rule
 
-Let's look at some tools for altering our project history, like cleaning up local commits. Just as we saw in th previous course, [rebasing](../how_git_works/Rebasing_Made_Simple) is a nice tool at our disposal but we should never rebase shared commits, since it is a command which creates new commits which may cause old commits to be unreachable. This rule applies for all tools we are going to view in this module.
+Let's look at some tools for altering our project history, like cleaning up local commits. Just as we saw in th previous course, [rebasing](../how_git_works/rebasing_made_simple) is a nice tool at our disposal but we should never rebase shared commits, since it is a command which creates new commits which may cause old commits to be unreachable. This rule applies for all tools we are going to view in this module.
 
 ## Changing the Latest Commit
 

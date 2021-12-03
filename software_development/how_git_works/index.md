@@ -4,7 +4,7 @@ Learn the inner working of Git, link to the original course [here](https://www.p
 
 ## Contents
 
-- [Git is Not What You Think](Git_is_Not_What_You_Think.md)
-- [Branches Demystified](Branches_Demystified.md)
-- [Rebasing Made Simple](Rebasing_Made_Simple.md)
-- [Distributed Version Control](Distributed_Version_Control.md)
+- [Git is Not What You Think](git_is_not_what_you_think.md)
+- [Branches Demystified](branches_demystified.md)
+- [Rebasing Made Simple](rebasing_made_simple.md)
+- [Distributed Version Control](distributed_version_control.md)
