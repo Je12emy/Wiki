@@ -11,6 +11,6 @@ No utilizaremos un programa de terceros, sino la consola integrada para perder e
 1. [Introducción al Curso.md](Introducción_al_Curso.md)
 3. [Create](Create.md)
 5. [Insert](Insert.md)
-7. [Bash y Archivos SQL](Bash_y_Archivos_SQL.md)
+7. [Bash y Archivos SQL](bash_y_archivos_sql.md)
 8. [Select](Select.md)
-9. [Consultas en MySQL](Consultas_en_MySQL.md)
+9. [Consultas en MySQL](consultas_en_mysql.md)
