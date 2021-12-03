@@ -9,7 +9,7 @@ Todos mis apuntes personales
 
 * [Cuarta Generación 3](universidad/cuarta_generacion_3/index.md): Administración de bases de datos de Oracle.
 * [Cuarta Generación 4](universidad/cuarta_generacion_4/index): Administración de bases de datos de Oracle a fondo.
-* [Auditoria de Sistemas](universidad/auditoria_de_sistemas/auditoria_de_sistemas.md): Gestión de riesgos de TI, alineación entre TI, etc.
+* [Auditoria de Sistemas](universidad/auditoria_de_sistemas/index.md): Gestión de riesgos de TI, alineación entre TI, etc.
 
 ## Cursos
 

@@ -48,7 +48,7 @@ Se busca la protección de datos, información, personas, software y hardware, d
 
 ## Seguridad Lógica
 
-Enfocada en la autenticación de los usuarios, como entro y cuando entro, se encuentra muy relacionado con las [pistas de auditoria](Pistas_de_Auditoria.md)
+Enfocada en la autenticación de los usuarios, como entro y cuando entro, se encuentra muy relacionado con las [pistas de auditoria](pistas_de_auditoria.md)
 
 * Asignación de contraseñas.
 * Vigencia de contraseñas.
