@@ -23,4 +23,4 @@ Todos mis apuntes personales
 
 ## Personal
 
-* [Notas Personales](personal/personal)
+* [Notas Personales](personal/index.norg)
