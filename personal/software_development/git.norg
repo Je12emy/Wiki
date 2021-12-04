@@ -1,0 +1,19 @@
+@document.meta
+    title: git
+    description: A set of usefull git commands and related concepts
+    author: dio
+    categories: programming, git
+    created: 2021-11-24
+    version: 0.0.8
+@end
+
+* Git Tips and Tricks
+  - To avoid entering your credetials everytime you push or pull from the repo, you can configure the [credential helper](https://git-scm.com/docs/gitcredentials) to manage your git credentials like so:
+      @code
+      git config --global credential.helper store
+      @end
+      /Note:/ There are many more options, but this is just the simplest for me.
+  - You can undo changes with checkout and --patch
+      @code
+      git checkout HEAD --patch <file_name>
+      @end

@@ -1,0 +1,29 @@
+@document.meta
+    title: Journal Index
+    description: Entry point for my new journal using the neorg neovim plugin.
+    author: dio
+    categories: Personal
+    created: 2021-11-22
+    version: 0.1
+@end
+
+* Jeremy's Vault
+  This is my first time trying out this plugin cool org-mode like plugin [neorg](https://github.com/nvim-neorg/neorg)
+ ** Personal Task List
+    - [*] Buy Tamara's birthday present!
+    -- Present arives on 2021/12/07.
+    - [ ] Setup a journal outside my wiki notes.
+        -- [There is a PR](https://github.com/nvim-neorg/neorg/pull/182) with this exact feature.
+    - [ ] Pay for new clothes.
+    - [x] Pay college.
+    - [*] Set up phone's 2 factor auth.
+    -- [ ] Forticlient.
+    -- [ ] Microsoft Auth.
+    -- [x] Codigo BAC.
+    -- [ ] BN Token.
+
+ ** Other Stuff
+    Other entries I've written as reminders and usefull information
+    - [Software Development](:software_development/software_development)
+    - [College](:college)
+    - [Neo Org-mode guide](:norg_guide)

@@ -1,0 +1,28 @@
+@document.meta
+    title: Software Development
+    description: List of stuff regarding software development.
+    author: dio
+    categories: programming
+    created: 2021-11-22
+    version: 0.0.8
+@end
+
+* Software Development
+  Notes regarding software development. 
+ ** Things I want to Learn for 2022
+    Technologies I would like to transition into for 2022.
+    - [*] [Svelte Kit](https://svelte.dev/tutorial/basics)
+    -- Learning about svelte component's life cycle.
+    - [*] DotNet
+    -- Currently working on a small quizlet like POC app.
+    - [ ] Postgres
+    - [ ] VPS
+    - [ ] Flutter
+    - [ ] Web3
+    - [ ] Rust
+ ** Projects
+    Ongoing projects I'm planning on working on or I'm planning to work on.
+    - [ ] LibreQuizlet: A MVP for a quizlet clone written in SvelteKit and DotNet.
+ ** Subjects
+    - [The Repository Pattern](:repository_pattern)
+    - [Git Tips and Tricks](:git)

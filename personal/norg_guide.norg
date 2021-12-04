@@ -1,0 +1,18 @@
+@document.meta
+    title: Norg User Guide
+    description: A bunch of stuff I learned from using norg
+    author: dio
+    categories: learning
+    created: 2021-11-22
+    version: 0.0.8
+@end
+
+* Neo-Org User Guide
+
+ ** Basic Keybindings
+    - `gtd`: Get Task Done
+    - `gtu`: Get Task Undone
+    - `gtp`: Get Task Pending
+ ** Shortcuts
+    - Open a file: `<C-o>`
+    - Go to previous file: `<C-i>`

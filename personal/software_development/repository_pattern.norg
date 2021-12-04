@@ -1,0 +1,43 @@
+@document.meta
+    title: The Repository Pattern
+    description: A popular design pattern for data persistence.
+    author: dio
+    categories: 
+    created: 2021-11-22
+    version: 0.0.8
+@end
+
+* The Repository Pattern
+    The repository pattern is a very popular design pattern in software development for data persistence.
+
+    > A repository mediates between the domain and data mapping layers, acting like an *in-memory collection* of domain objects.
+
+ ** Benefits
+    - Minimizes duplicate query logic.
+    - Decouples your aplication from persistence frameworks, this would allow us to switch between frameworks at ease.
+        - We should be able to switch between frameworks if we want to since our code won't be so tightly coupled.
+    - Promotes testability.
+ ** In a Nutshell
+    Our repository should hold simple function which acts as a collection of objects in memory:
+    - Add
+    - Remove
+    - Get
+    - Find
+    - GetAll
+    Notice we aren't using an update method, since *in-memory* we would simply take that object and update it's properties.
+
+    @code c_sharp
+        var course = collection.Get(1);
+        course.Name = "New Name";
+    @end
+
+    This menas a /repository should not have the semantics of our database/, but still... How are we going to save these objects to the Data Base?
+
+ ** Unit of Work Pattern
+
+    > A unit of work maintains a list of objects affected by a business transaction and coordinates the writing out of changes.
+
+    There is an argument for framework like Entity Framework where the `DbSet` operates as a repository with basic in-memory like operations and the `DbContext` operates as the unit of work which keeps track and saving changes. On the surface, EF may look like an intance of the repository framework but:
+    - EF returns an instance of `IQueryable` which means we will be writting the same queries throughout the codebase.
+    - By moving these queries into their own extension does not solve this, since they are still returning an intance of `IQueryable`, this means developers might think they can build queries upon this returned value.
+    - Decouples our application from persitence frameworks, if we are tied to EF we won't be able to switch between frameworks, what is inside the repository should not matter to the application itself.

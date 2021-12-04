@@ -1,7 +1,16 @@
-# Brave Sync
+@document.meta
+    title: brave_sync
+    description: 
+    author: dio
+    categories: 
+    created: 2021-12-03
+    version: 0.0.8
+@end
+
+* Brave Sync
 
 This is my brave sync code.
 
-```
+@code
 screen open club picture dish amused volcano harvest token result master mutual rebuild wealth sniff inmate hybrid good vault lion obey slow jaguar beach
-```
+@end

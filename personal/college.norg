@@ -1,0 +1,21 @@
+@document.meta
+    title: college
+    description: A entry for college related stuff
+    author: dio
+    categories: college
+    created: 2021-11-27
+    version: 0.0.8
+@end
+
+* College
+ ** Task List
+    - [ ] Study latest class on datapump.
+ ** Final Project Task List
+    - [x] Stablish comnectiom from SQL client to cluster
+    -- Try a new VM with comnection to the SCAN network.
+    - [x] Create backend graphQL server.
+    - [*] Final tweaks for documentation.
+    - [ ] Final tweaks for lab environment.
+    - [x] App and cluster demo video.
+    -- [x] Record demo.
+    -- [x] Editing.
