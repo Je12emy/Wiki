@@ -131,3 +131,14 @@ On S3 we can enable versioning on a bucket, this allows us to version our object
 ![S3 Versioning](https://i.imgur.com/gVjullY.png)
 
 *Note:* We are able to retrieve a specific object version.
+
+## Lifecycle Management
+
+This feature automates to process of moving objects between storage classes or deleting them completely. A simple use case would be:
+
+* 7 days after uploading an object to S3 update an object class to the Glacier storage class, since we are unlikely to continue using it, this would save up on costs.
+* 365 days after uploading an object to S3, remove it, since it's no longer needed.
+ 
+![S3 Sample Lifecycle Rule](https://i.imgur.com/gVjullY.png)
+
+This feature can be used alongside versioning, to manage an object's version lifecycle.
