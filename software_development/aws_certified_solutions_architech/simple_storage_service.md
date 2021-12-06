@@ -96,3 +96,16 @@ When we upload files to S3, we are using **SSL/TLS** by default, this means we h
 * SSE-C or Customer Provided: We provide the keys ourselves.
 
 We can also encrypt our own files before uploading them to AWS, which is known as **Client Side Encryption**.
+
+
+## S3 Data Consistency
+
+When we put or write data to S3, which happens when we create new objects, the consistency is going to be different when we overwrite or delete objects.
+
+### New Objects (PUTS)
+
+When we send new data to S3 as a new object it's going to be *Read After Write* Consistency, this means that when upload a new S3 object we are immediately able to read the data, and it's going to be consistent.
+
+### Overwrite (PUTS) or Delete Objects (DELETES)
+
+When we overwrite or delete an existing object we deal with *Eventual Consistency*, which means that it takes time for S3 to replicate this changes to all AZ's, in this case, if we were to read the data after uploading it, S3 may return an old copy. We generally need to wait a few seconds before reading the new data.
