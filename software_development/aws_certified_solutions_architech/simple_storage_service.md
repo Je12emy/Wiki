@@ -141,4 +141,9 @@ This feature automates to process of moving objects between storage classes or d
  
 ![S3 Sample Lifecycle Rule](https://i.imgur.com/gVjullY.png)
 
-This feature can be used alongside versioning, to manage an object's version lifecycle.
+## Transfer Acceleration
+
+This feature provides us **fast and secure** transfer of files over long distances between end users and an S3 bucket, in here instead of uploading an object into an S3 bucket, you upload your data into a `distinct URL` for an **Edge Location** (a data center that is as close as possible). Once the data is uploaded the Edge Location, it is then forwarded through a specially optimized network (Amazon's backbone network)
+
+![S3 Transfer Acceleration](https://i.imgur.com/rq2fw3i.png)
+
