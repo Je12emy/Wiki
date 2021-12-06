@@ -119,3 +119,15 @@ When this feature is enable, any object that is uploaded will be **automatically
 *Note:* It is also possible to copy an object into another S3 bucket in a separate account.
 
 To enable CRR you must enable versioned on both the source and the destination buckets.
+
+## Versioning
+
+On S3 we can enable versioning on a bucket, this allows us to version our objects in order to prevent data loss and version tracking.
+
+* Store all versions of an object in S3.
+* Once enabled it cannot be disabled, only suspended.
+* Fully integrates with S3's lifecycle rules.
+
+![S3 Versioning](https://i.imgur.com/gVjullY.png)
+
+*Note:* We are able to retrieve a specific object version.
