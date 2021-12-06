@@ -15,13 +15,13 @@
     - [*] Setup a journal outside my wiki notes.
         -- [There is a PR](https://github.com/nvim-neorg/neorg/pull/182) with this exact feature.
     - [ ] Pay for new clothes.
-    - [x] Pay college.
     - [ ] Pay phone bill.
     - [*] Set up phone's 2 factor auth.
     -- [ ] Forticlient.
     -- [ ] Microsoft Auth.
     -- [x] Codigo BAC.
     -- [ ] BN Token.
+    --- [ ] Restaurar OTP
 
  ** Other Stuff
     Other entries I've written as reminders and usefull information
