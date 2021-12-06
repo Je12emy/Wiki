@@ -12,12 +12,14 @@ Administración de bases de datos de Oracle a fondo, se recomienda leer el curso
 * [Backup and Recovery](respaldo_y_recuperacion)
 * [Flash Recovery Area](flash_recovery_area)
 * [Respaldos Lógicos](respaldos_logicos)
+* [Replicación](replicacion)
 
 ## Tareas
 
 * [Ejercicio de creacion de una Base de Datos Manualmente](tarea_creacion_db_manual) 
 * [Ejercicio con Parametros de Inicio](tarea_parametros_inicio) 
 * [Ejercicio Oracle Flashback](tarea_oracle_flashback)
+* [Ejercicio Replicación de Datos](tarea_replicación_datos)
  
 ## Practicas
 
