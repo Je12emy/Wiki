@@ -82,7 +82,17 @@ S3 Guarantees:
 
 ## S3 Security
 
-When we create a new bucket, they are all **private by default** and AWS really promotes not exposing buckets. Logging per request can be enabled in order to know which objects are being accesed and uploaded into our bucket, though logs are stored in a separate bucket. In S3 there are two security solutions:
+When we create a new bucket, they are all **private by default** and AWS really promotes not exposing buckets. Logging per request can be enabled in order to know which objects are being accessed and uploaded into our bucket, though logs are stored in a separate bucket. In S3 there are two security solutions:
 
-* Access Control Lists: This is a legacy feature, though it's not deprecated, this is a very simple way for granting access to an object say public access or just read and writte permissions.
+* Access Control Lists: This is a legacy feature, though it's not deprecated, this is a very simple way for granting access to an object say public access or just read and write permissions.
 * Bucket Policies: This is a more complex way of setting access policies since we need to write these policies into a JSON file.
+
+### S3 Encryption
+
+When we upload files to S3, we are using **SSL/TLS** by default, this means we have encryption for traffic between our local host and S3, for **Server Side Encryption** or SSE (this encrypts the data itself) there are a few options.
+
+* SSE-AES: A 256 byte in length to be used in encryption, this is completely handled by S3.
+* SSE-KMS or Key Managed: Keys are encrypted with another key, these keys can be managed by AWS or by us.
+* SSE-C or Customer Provided: We provide the keys ourselves.
+
+We can also encrypt our own files before uploading them to AWS, which is known as **Client Side Encryption**.
