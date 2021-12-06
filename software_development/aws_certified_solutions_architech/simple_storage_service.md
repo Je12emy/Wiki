@@ -109,3 +109,13 @@ When we send new data to S3 as a new object it's going to be *Read After Write* 
 ### Overwrite (PUTS) or Delete Objects (DELETES)
 
 When we overwrite or delete an existing object we deal with *Eventual Consistency*, which means that it takes time for S3 to replicate this changes to all AZ's, in this case, if we were to read the data after uploading it, S3 may return an old copy. We generally need to wait a few seconds before reading the new data.
+
+## Cross Region Replication or CRR
+
+When this feature is enable, any object that is uploaded will be **automatically replicated** to another region, this provides higher durability and disaster recovery for objects. 
+
+![S3 CRR](https://i.imgur.com/Khd7xLV.png)
+
+*Note:* It is also possible to copy an object into another S3 bucket in a separate account.
+
+To enable CRR you must enable versioned on both the source and the destination buckets.
