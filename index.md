@@ -1,6 +1,3 @@
-<!-- LTeX: language=es -->
-[comment]: <> "LTeX: languague=es"
-
 # Jeremy's Notes
 
 Todos mis apuntes personales
