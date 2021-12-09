@@ -1,3 +1,5 @@
+# Obsidian config
 .obsidian/
 .trash
-personal/
+# My personal diary
+diary/
