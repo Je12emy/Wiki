@@ -170,3 +170,36 @@ aws s3api put-bucket-versioning \
 *Note:* Only the bucket owner logged in as a Root user can delete objects from the bucket.
 
 ![S3 MFA](https://i.imgur.com/ygGpql3.png)
+
+## Hands-On
+
+### Creating a S3 Bucket
+
+Most AWS services need us to specify a region, this is not the case for S3 and we may use the "Global" region in the top right corner.
+
+![S3 Region Selection](https://i.imgur.com/hxN1Jjo.png)
+
+To create our first bucket, click on "Create Bucket" and provide a bucket name, just as registering a domain name we can't use certain characters for our bucket's name, finally select a region.
+
+![S3 Bucket Creation](https://i.imgur.com/UyFdrgk.png)
+
+Deleting this bucket is a simple as selecting it and clicking "Delete Bucket"
+
+![S3 Deleting a Bucket](https://i.imgur.com/3srSt2z.png)
+
+
+### Uploading to a Bucket
+
+Uploading files to our bucket can be done by simply dragging them into our bucket.
+
+![S3 Uploading File to S3](https://i.imgur.com/c6bLNY6.png)
+
+After uploading a file we may click it and view its details.
+
+![S3 Object Details](https://i.imgur.com/oR7RXjI.png)
+
+In here we will find we will find the `Object URL` which is the link to this object on the public internet, notice how our bucket's name is being used in this URL which is why these bucket names should be unique, if we were to click on this link we won't be able to view this image since bucket are **private by default**. 
+
+### Making a Bucket Public
+
+Visit the bucket and select the properties tab, scroll down to `Block public access`, in here we are able to edit a bucket's public access

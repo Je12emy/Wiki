@@ -1,6 +1,6 @@
 # Jeremy's Notes
 
-Todos mis apuntes personales
+Todos mis apuntes personales para el publico
 
 ## Universidad
 
