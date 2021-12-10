@@ -115,29 +115,29 @@ AS
 EXEC DBMS_STATS.gather_table_stats (USER, 'EMP_AGGR_MV');
 ```
 
-*Nota:* Aca se puede ver que se esta utilizando una clausula de agrupamiento.
+*Nota:* Acá se puede ver que se está utilizando una cláusula de agrupamiento.
 
-Aca encontramos varios parametros opcionales en la consulta:
+Acá encontramos varios parámetros opcionales en la consulta:
 
 * `Build Type`:
-    * `Immediate`: Se popula los datos de manera inmediata.
-    * `Deffered`: Se llenara la vista con datos en el momento que ocurra el primer refrescamiento.
+    * `Immediate`: Se populan los datos de manera inmediata.
+    * `Deffered`: Se llenará la vista con datos en el momento que ocurra el primer refrescamiento.
 * `Refresh Type`:
-    * `Forced`: Se combina al refrescamiento rapido y completo, primero se realiza un refrescamiento rápido, que si en primera instancia no se logra realizar con exito, se usara un refrescamiento completo.
+    * `Forced`: Se combina al refrescamiento rápido y completo, primero se realiza un refrescamiento rápido, que si en primera instancia no se logra realizar con éxito, se usara un refrescamiento completo.
     * Modificador de Refrescamiento:
-        * `On Demand`: Se actaliza la vista manualmente o mediante una operacion ya planificada.
-        * `On Commit`: Se ejecutara el refrescamiento despues de un `commit` en el sitio principal.
+        * `On Demand`: Se actualiza la vista manualmente o mediante una operación ya planificada.
+        * `On Commit`: Se ejecutará el refrescamiento después de un `commit` en el sitio principal.
 
 ### Replicación Avanzada
 
-En este tipo de replicación se extiendienden las capacidades sobre la replica de los datos, puesto que se permite actualizar la información de los tabla y esto se vera reflejado sobre las tablas replicadas. Aca participan varios procesos que se encargan de asegurar la consistencia de las transacciones en todas las bases de datos que participan en la replicación de los datos.
+En este tipo de replicación sé extendiendo las capacidades sobre la réplica de los datos, puesto que se permite actualizar la información de las tablas y esto se verá reflejado sobre las tablas replicadas. Acá participan varios procesos que se encargan de asegurar la consistencia de las transacciones en todas las bases de datos que participan en la replicación de los datos.
 
-* Si se actualiza la replica, se actualiza a la tabla principal.
-* Si se actualiza la tabla principal, se actulizan las replicas
+* Si se actualiza la réplica, se actualiza a la tabla principal.
+* Si se actualiza la tabla principal, se actualizan las réplicas
 
 ![Replicación de Datos Avanzada](https://i.imgur.com/kjK3jGu.png)
 
-Aca la tabla replica cuenta con comunicación bi-direccionar con el sitio principal, esto significa que sus modificaciones se veran reflejadas en las replicas. Esto es muy util en casos donde se desea evitar la sobre carga sobre un sitio, donde se puede preparar un sitio replica en una nube para no realizar muchas consultas sobre el sitio principal.
+Acá la tabla réplica cuenta con comunicación bi-direccionar con el sitio principal, esto significa que sus modificaciones se verán reflejadas en las réplicas. Esto es muy útil en casos donde se desea evitarla sobre carga sobre un sitio, donde se puede preparar un sitio replica en una nube para no realizar muchas consultas sobre el sitio principal.
 
 #### Replicación Multimaster
 
@@ -149,27 +149,27 @@ Es un tipo de replicación en donde se pueden tener varios sitios principales, l
 
 Es posible configurar un sitio maestro que utiliza de sitios secundarios con replicación básica.
 
-Comparado con snapsots, los sitios maestros cuentan con una copia completa de los datos, mientras que el `snapshot` puede contar con partes de la tabla por replicar.
+Comparado con `snapsots`, los sitios maestros cuentan con una copia completa de los datos, mientras que el `snapshot` puede contar con partes de la tabla por replicar.
 
 ![Configuración Híbrida](https://i.imgur.com/PNTIlIf.png)
 
-### Conflicos en Ambientes Avanzados
+### Conflictos en Ambientes Avanzados
 
 En ambientes avanzados es posible toparse conflictos en los datos entre los sitios maestros.
 
-* Conflicos de Llames Primarias: Registros que cuentan con la misma llave primaria.
+* Conflictos de Llames Primarias: Registros que cuentan con la misma llave primaria.
 * Conflicos de Actualización: Entre sitios maestros se pueden dar conflictos entre columnas actualizadas, las cuales deben de resolver.
 * Conflictos de Borrado: Ocurren cuando un registro se ve borrado en un sitio, el cual no se ve borrado en otro sitio.
 
-## Consejos y buenas practicas al momento de usar la replicación
+## Consejos y buenas prácticas al momento de usar la replicación
 
-Como buenas practicas encontramos los siguientes pasos para utilizar la replicación de forma efectiva.
+Como buenas prácticas encontramos los siguientes pasos para utilizar la replicación de forma efectiva.
 
-1. Diseñar el ambiente de replicación básica, concentrese en modelar y diseñar la arquitectura de la replicación.
-2. En cada sitio de replicación, crear los esquemas y `database links` para soportar/almacenar las replicas.
+1. Diseñar el ambiente de replicación básica, centrarse en modelar y diseñar la arquitectura de la replicación.
+2. En cada sitio de replicación, crear los esquemas y `database links` para soportar/almacenar las réplicas.
 3. En el sitio maestro crear el `snapshot log` para que el sitio de replicar pueda replicar los datos.
 4. Crear los `snapshot` en el sitio replica.
-5. En cada sitio de replica, construir el grupo de refrescammiento.
-6. Proporcionar los privilegios necesarios para los usuarios para acceder a las replicas.
+5. En cada sitio de réplica, construir el grupo de refrescamiento.
+6. Proporcionar los privilegios necesarios para los usuarios para acceder a las réplicas.
 
 Para poner esto en practica, revice la [practica de replicación de datos](practica_replicacion)
