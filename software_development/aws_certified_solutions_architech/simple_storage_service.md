@@ -81,7 +81,6 @@ S3 Guarantees:
 * Amazon guarantees 11'9s of durability.
 
 ## S3 Security
-<<<<<<< HEAD
 
 When we create a new bucket, they are all **private by default** and AWS really promotes not exposing buckets. Logging per request can be enabled in order to know which objects are being accessed and uploaded into our bucket, though logs are stored in a separate bucket. In S3 there are two security solutions:
 
