@@ -97,7 +97,6 @@ When we upload files to S3, we are using **SSL/TLS** by default, this means we h
 
 We can also encrypt our own files before uploading them to AWS, which is known as **Client Side Encryption**.
 
-
 ## S3 Data Consistency
 
 When we put or write data to S3, which happens when we create new objects, the consistency is going to be different when we overwrite or delete objects.
@@ -170,3 +169,71 @@ aws s3api put-bucket-versioning \
 *Note:* Only the bucket owner logged in as a Root user can delete objects from the bucket.
 
 ![S3 MFA](https://i.imgur.com/ygGpql3.png)
+
+## Hands-On Key Takeaways
+
+In order to make an object publicly accessible, you need to configure an ACL policy at `permissions > Bucket Policy > Edit`, here's a sample configuration for a single object.
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Allow object public access",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "*"
+            },
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::{bucket-name}/{objcet-path}"
+        }
+    ]
+}
+```
+
+Versioning is a feature which cannot be turned off, only suspended, this means objects will still have a version history, but we won't be able to add new versions.
+
+![S3 Enabling Versioning](https://i.imgur.com/IyxWFE3.png)
+
+With versioning enabled, if we upload a new file with the same name as an existing object, S3 will detect it as a new version. The original version has no ID since versioning was disabled.
+
+![S3 New Object Version](https://i.imgur.com/W3sXU6d.png)
+
+When we upload a new file, they don't inherit the previous version's properties though our ACL does enable use to retrieve the latest version since the older versions have a `&version` query parameter on their path. We can also select a specific object version and delete it.
+
+Server-side encryption only affect objects after it has been enabled, we will need to enable it on each pre-existing object, turning it on is a simple as visiting `Properties > Default Encryption > Edit`
+
+![S3 Enable encryption](https://i.imgur.com/shU7ZaW.png)
+
+## The AWS CLI for S3
+
+The [AWS cli](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) enables us to interact with AWS'S services from the command line, before configuring it, make sure to create a [IAM User](https://console.aws.amazon.com/iamv2/home#/home) with programmatic access, then run `aws configure` and fill out the required inputs.
+
+To list your available S3 Buckets use the following commands:
+
+```bash
+# List all the s3 buckets
+$ aws s3 ls
+
+2021-12-07 17:12:49 je12emy-csa-bucket
+
+# Show the content at the root level for a given bucket
+$ aws s3 ls je12emy-csa-bucket
+                           PRE images/
+# Show the content inside the folder 'images'
+$ aws ls je12emy-csa-bucket/images/
+2021-12-10 14:10:21          0
+2021-12-10 16:37:53    2425730 space.png
+2021-12-10 15:40:37     216708 vader.png
+```
+
+We can also move files from and into the bucket from s3.
+
+```bash
+# Download a file from S3
+$ aws s3 cp s3://je12emy-csa-bucket/images/vader.png ~/Pictures/s3_vader.png
+download: s3://je12emy-csa-bucket/images/vader.png to ../../Pictures/s3_vader.png
+# Upload a file into S3
+$ aws s3
+```
+
