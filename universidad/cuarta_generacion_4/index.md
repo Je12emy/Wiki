@@ -14,6 +14,7 @@ Administración de bases de datos de Oracle a fondo, se recomienda leer el curso
 * [Backup and Recovery](respaldo_y_recuperacion)
 * [Flash Recovery Area](flash_recovery_area)
 * [Respaldos Lógicos](respaldos_logicos)
+* [Datapump](datapump)
 * [Replicación de Datos](replicacion)
 
 ## Tareas
