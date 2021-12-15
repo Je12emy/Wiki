@@ -1,3 +1,5 @@
+<!-- LTeX: language=es -->
+
 # Cuarta Generación IV
 
 Administración de bases de datos de Oracle a fondo, se recomienda leer el curso previo de [Cuarta Generación](../cuarta-generacion-3/index)
@@ -12,6 +14,8 @@ Administración de bases de datos de Oracle a fondo, se recomienda leer el curso
 * [Backup and Recovery](respaldo_y_recuperacion)
 * [Flash Recovery Area](flash_recovery_area)
 * [Respaldos Lógicos](respaldos_logicos)
+* [Datapump](datapump)
+* [Replicación de Datos](replicacion)
 
 ## Tareas
 
@@ -23,3 +27,10 @@ Administración de bases de datos de Oracle a fondo, se recomienda leer el curso
 
 * [Practica Auditoria de Oracle DB](practica_auditoria_oracle)
 * [Practica de Respaldos Lógicos](practica_respaldos_logicos) 
+* [Practica de Replicación de Datos](practica_replicacion)
+
+## Recursos Adicionales
+
+He creado un script de `bash` para facilitar el proceso de crear una base de datos manualmente, sientase libre de auditar su contenido.
+
+* [Script de creación de bases de datos](CreateOracleDB.sh)

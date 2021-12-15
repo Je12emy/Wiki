@@ -1,9 +1,8 @@
 <!-- LTeX: language=es -->
-[comment]: <> "LTeX: languague=es"
 
 # Jeremy's Notes
 
-Todos mis apuntes personales
+Todos mis apuntes personales para el publico
 
 ## Universidad
 
