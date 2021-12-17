@@ -76,7 +76,7 @@ Exportar toda la base de datos, incluidos los privilegios, indices y los datos.
 -- Con exp
 export username/password FULL=y FILE=dba.dmp GRANTS=y INDEXES=y ROWS=y
 -- Con dmpdp
-expdp username/password FULL=y INCLUDE=grant iNCLUDE=index DIRECTORY=respaldos DUMPFILE=dba.dmp CONTENT=ALL
+expdp username/password FULL=y INCLUDE=grant INCLUDE=index DIRECTORY=respaldos DUMPFILE=dba.dmp CONTENT=ALL
 ```
 
 Exportar **solamente la estructura**, sin incluir los datos del esquema `SCOTT`.
