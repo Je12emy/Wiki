@@ -139,6 +139,18 @@ impdp username/password DIRECTORY=backups DUMPFILE=scott.dmp TABLES=scott.emp RE
 
 Note que acá ya no se están utilizando los parámetros de `FROMUSER` ni `TOUSER`
 
+Importar un `.dmp` completo pero unicamente los datos.
+
+```console
+impdp.exe DIRECTORY=backups DUMPFILE=expfull.dmp CONTENT=DATA_ONLY;
+```
+
+Importar un `.dmp` completo, pero excluir a las tablas que empiezan con `EMP`
+
+```console
+impdp.exe DIRECTORY=backups DUMPFILE=expfull.dmp EXCLUDE=TABLE:"LIKE 'EMP%'";
+```
+
 ## Parfile
 
 El archivo `parfile` permite configurar los parámetros de cada operación en un archivo por separado, estos archivos cuentan con una extensión `.par`
