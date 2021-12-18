@@ -157,7 +157,7 @@ Comparado con `snapsots`, los sitios maestros cuentan con una copia completa de 
 
 En ambientes avanzados es posible toparse conflictos en los datos entre los sitios maestros.
 
-* Conflictos de Llames Primarias: Registros que cuentan con la misma llave primaria.
+* Conflictos de Llaves Primarias: Registros que cuentan con la misma llave primaria.
 * Conflicos de Actualización: Entre sitios maestros se pueden dar conflictos entre columnas actualizadas, las cuales deben de resolver.
 * Conflictos de Borrado: Ocurren cuando un registro se ve borrado en un sitio, el cual no se ve borrado en otro sitio.
 
