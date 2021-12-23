@@ -1,3 +1,5 @@
+<!-- LTeX: language=es -->
+
 # Jeremy's Notes
 
 Todos mis apuntes personales para el publico

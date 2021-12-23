@@ -237,6 +237,7 @@ download: s3://je12emy-csa-bucket/images/vader.png to ../../Pictures/s3_vader.pn
 $ aws s3 cp ~/Pictures/mc.jpg s3://je12emy-csa-bucket-images/mc.jpj
 ```
 
+<<<<<<< HEAD
 Remember all objects are private by default, in order to provide temporary access to an object use the following command in order to generate a URL for it.
 
 ```bash

@@ -28,6 +28,7 @@ Administración de bases de datos de Oracle a fondo, se recomienda leer el curso
 * [Practica Auditoria de Oracle DB](practica_auditoria_oracle)
 * [Practica de Respaldos Lógicos](practica_respaldos_logicos) 
 * [Practica de Replicación de Datos](practica_replicacion)
+* [Practica Datapump](practica_datapump)
 
 ## Recursos Adicionales
 

@@ -76,7 +76,7 @@ Exportar toda la base de datos, incluidos los privilegios, indices y los datos.
 -- Con exp
 export username/password FULL=y FILE=dba.dmp GRANTS=y INDEXES=y ROWS=y
 -- Con dmpdp
-expdp username/password FULL=y INCLUDE=grant iNCLUDE=index DIRECTORY=respaldos DUMPFILE=dba.dmp CONTENT=ALL
+expdp username/password FULL=y INCLUDE=grant INCLUDE=index DIRECTORY=respaldos DUMPFILE=dba.dmp CONTENT=ALL
 ```
 
 Exportar **solamente la estructura**, sin incluir los datos del esquema `SCOTT`.
@@ -138,6 +138,18 @@ impdp username/password DIRECTORY=backups DUMPFILE=scott.dmp TABLES=scott.emp RE
 ```
 
 Note que acá ya no se están utilizando los parámetros de `FROMUSER` ni `TOUSER`
+
+Importar un `.dmp` completo pero unicamente los datos.
+
+```console
+impdp.exe DIRECTORY=backups DUMPFILE=expfull.dmp CONTENT=DATA_ONLY;
+```
+
+Importar un `.dmp` completo, pero excluir a las tablas que empiezan con `EMP`
+
+```console
+impdp.exe DIRECTORY=backups DUMPFILE=expfull.dmp EXCLUDE=TABLE:"LIKE 'EMP%'";
+```
 
 ## Parfile
 
