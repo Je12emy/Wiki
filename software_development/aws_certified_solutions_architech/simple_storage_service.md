@@ -262,3 +262,20 @@ This feature allows us to copy files from _x_ bucket into another bucket, first 
 * Choose the scope for this rule: Apply to all objects in the bucket.
 * Choose a destination bucket, in here you are able to use another AWS account's bucket: je12emy-cas-backup-bucket.
 * Choose whether to change the storage class on the destination, this is a really nice option.
+
+## Bucket Policies
+
+A policy can be created over at `Permisions>Bucket policy`, in here we can create a new policy through a simple JSON entry, when editing you will be shown a builder, or you could also visit the [policy generator](https://awspolicygen.s3.amazonaws.com/policygen.html), in this case we will create a policy which restricts uploading (Put) a new object into this bucket.
+
+```json
+{
+    "Sid": "Deny file upload",
+    "Effect": "Deny",
+    "Principal": "*",
+    "Action": [
+        "s3:PutObject",
+        "s3:PutObjectAcl"
+    ],
+    "Resource": "arn:aws:s3:::je12emy-csa-bucket/*"
+}
+```
