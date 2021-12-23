@@ -253,3 +253,12 @@ Now with several objects on our bucket, we can change an object's storage class 
 * Lifecycle rule actions, these are several actions we can automate: Move current versions of objects between storage classes
     * Standard IA, 30 day.
 There are other options available like expiring the object after x days, which would delete the object and free up space for us.
+
+## Cross Region Replication
+
+This feature allows us to copy files from _x_ bucket into another bucket, first create a new bucket and enable versioning on it. On the source bucket enable Cross Region Replication at `Properties>Replication Rules>Create replication rule`.
+* Provide a descriptive rule name: Replicate to back up bucket.
+* Choose whether should the rule be applied when the rule is created: Enabled.
+* Choose the scope for this rule: Apply to all objects in the bucket.
+* Choose a destination bucket, in here you are able to use another AWS account's bucket: je12emy-cas-backup-bucket.
+* Choose whether to change the storage class on the destination, this is a really nice option.
