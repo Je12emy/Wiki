@@ -234,6 +234,14 @@ We can also move files from and into the bucket from s3.
 $ aws s3 cp s3://je12emy-csa-bucket/images/vader.png ~/Pictures/s3_vader.png
 download: s3://je12emy-csa-bucket/images/vader.png to ../../Pictures/s3_vader.png
 # Upload a file into S3
-$ aws s3
+$ aws s3 cp ~/Pictures/mc.jpg s3://je12emy-csa-bucket-images/mc.jpj
+```
+
+Remember all objects are private by default, in order to provide temporary access to an object use the following command in order to generate a URL for it.
+
+```bash
+# Generate a temporary URL to a given object
+$ aws s3 presign s3://je12emy-csa-bucket/images/mc.jpg --expires-in 300
+https://je12emy-csa-bucket.s3.us-east-1.amazonaws.com/images/mc.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIATN62CQAEGRLW5XCQ%2F20211223%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20211223T201710Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=de8dafc26779465f87f74c907c2c59fbd0bbbc7b5e89c8e4ccd98fe510d6eb82
 ```
 
