@@ -245,3 +245,11 @@ $ aws s3 presign s3://je12emy-csa-bucket/images/mc.jpg --expires-in 300
 https://je12emy-csa-bucket.s3.us-east-1.amazonaws.com/images/mc.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIATN62CQAEGRLW5XCQ%2F20211223%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20211223T201710Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=de8dafc26779465f87f74c907c2c59fbd0bbbc7b5e89c8e4ccd98fe510d6eb82
 ```
 
+## Lifecycle Policies
+
+Now with several objects on our bucket, we can change an object's storage class on the properties tab at `Properties>Storage Class>Edit`. This process may be automated through lifecycle policies, to create a new policy visit `Management>Create lifecycle rule`.
+* Create a descriptive name for this rule: 30-day rule.
+* Choose a scope rule, this enables us to limit this rule to a specific object or all object on the bucket: Apply to all objects in the bucket.
+* Lifecycle rule actions, these are several actions we can automate: Move current versions of objects between storage classes
+    * Standard IA, 30 day.
+There are other options available like expiring the object after x days, which would delete the object and free up space for us.
