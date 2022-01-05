@@ -5,3 +5,4 @@ I enrolled in this course as an offer from Valuelabs, link to original video [he
 ## Table of Contents
 
 - [Simple Storage Service](simple_storage_service)
+- [AWS Snowball](aws_snowball)
