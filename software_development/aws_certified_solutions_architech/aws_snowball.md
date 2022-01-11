@@ -39,3 +39,14 @@ There are two sizes.
 
 * 100 TB with 83 TB of usable space.
 * 100 TB with 45 TB of usable space.
+
+## Snowmobile
+
+This is a 13 meter shipping container, pulled by a semi-trailer, it can transfter up to 100 PB per vehicle. In here the AWS staff will help you connect your network to the snowmobile and when data is transfered, they will drive back to AWS to import the data.
+
+### Features
+
+* GPS tracking.
+* Alarm monitoring.
+* 24/7 video surveilance.
+* An escord security vehicle while in transit (optional).
