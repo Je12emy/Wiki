@@ -19,3 +19,23 @@ There are two sizes for Snowball:
 * 50 TB with 42 TB of usable space.
 * 80 TB with 72 TB of usable space.
 
+## Snowball Edge
+
+This is yet another solution for transfering **petabyte-scale** via a physical briefcase with even more storage and on-site compute capabilites. This solutions is very similar to snowball but with more storage and local procesing.
+
+### Features and Limitations
+
+* Includes an LCD for displaying shipping information and other functionalities.
+* Can undertake local procesing and edge-computing workloads
+* Can be used in a cluster in groups of 5 to 10 devices.
+
+These last two mean we can turn these devices into a mini data center if we wanted to, and there are 3 device configurations.
+
+* Storage optimized (24 vCPUs)
+* Compute optimized (54 vCPUs)
+* GPU optimized (54 vCPUs)
+
+There are two sizes.
+
+* 100 TB with 83 TB of usable space.
+* 100 TB with 45 TB of usable space.
