@@ -2,7 +2,7 @@
 
 # El Software y la Ingeniería de Software
 
-En la actualidad el software es un recurso imprescindible para la supervivencia de miles de empresas y en nuestra vida cotidiana, apesar de la evolucion en el desarrollo de software siguen las mismas preguntas que se realizaban durante su incepcion original:
+En la actualidad el software es un recurso imprescindible para la supervivencia de miles de empresas y en nuestra vida cotidiana, a pesar de la evolución en el desarrollo de software siguen las mismas preguntas que se realizaban durante su inserción original:
 
 * ¿Por qué se requiere tanto tiempo para terminar el software?
 * ¿Por qué son tan altos los costos de desarrollo?
@@ -12,22 +12,22 @@ clientes?
 * ¿Por qué seguimos con dificultades para medir el avance mientras se desarrolla y
 mantiene el software?
 
-## Definicion de Software
+## Definición de Software
 
-El software puede ser simplemente descrito como un conjunto de instrucciones que cuando se ejecutan proporcionan las caracteristicas, funcion y desempeño buscados. Aun asi este tipo de definiciones no es suficiente para entender sus caracteristicas nativas comparado al hardware:
+El software puede ser simplemente descrito como un conjunto de instrucciones que cuando se ejecutan proporcionan las características, función y desempeño buscados. Aun así este tipo de definiciones no es suficiente para entender sus características nativas comparadas al hardware:
 
 ### El software se desarrolla o modifica con intelecto; no se manufactura en el sentido clásico.
 
-Comparado a un proyecto de hardware, los costos del software se centran en la ingenieria y no se pueden administrar como si fueran proyecto de manufactura.
+Comparado a un proyecto de hardware, los costos del software se centran en la ingeniería y no se pueden administrar como si fueran proyecto de manufactura.
 
 ### El Software no se "desgasta"
 
-Se puede decir que el software se desgasta igual que un producto de hardware, solo que este se desgasta con la introduccion de cambios. Con cada cambio introducido en el software se incrementa la complegidad, lo cual al mismo tiempo puede incrementar la tasa de fallas. Debido a este principio se puede decir que el softare se desgasta.
+Se puede decir que el software se desgasta igual que un producto de hardware, solo que este se desgasta con la introducción de cambios. Con cada cambio introducido en el software se incrementa la complejidad, lo cual al mismo tiempo puede incrementar la tasa de fallas. Debido a este principio se puede decir que el software se desgasta.
 
 
 ### Aunque la industria se mueve hacia la construcción basada en componentes, la mayor parte del software se construye para un uso individualizado
 
-La práctica de desarrollar componentes de software reutilizables entre productos es una practica que esta apenas empezando a agarrar tracción, comparado con su contraparte de hardware que lleva décadas en práctica.
+La práctica de desarrollar componentes de software reutilizables entre productos es una práctica que está apenas empezando a agarrar tracción, comparado con su contraparte de hardware que lleva décadas en práctica.
 
 ## Dominios del Software
 
@@ -140,76 +140,76 @@ La definición de la ingeniería de software puede variar según el autor, en pr
 
 > La ingeniería de software es el establecimiento y uso de principios fundamentales de la ingeniería con objeto de desarrollar en forma económica software que sea confiable y que trabaje con eficiencia en máquinas reales.
 
-Aun así esta definición puede ser un poco corta y no menciona aspectos como la calidad, requerimientos de usuarios, medicion, metodologia, procesos etc. por lo cual está la definición de IEEE.
+Aun así esta definición puede ser un poco corta y no menciona aspectos como la calidad, requerimientos de usuarios, medición, metodología, procesos etc. por lo cual está la definición de IEEE.
 
 > La ingeniería de software es: 1) La aplicación de un enfoque sistemático, disciplinado y cuantificable al desarrollo, operación y mantenimiento de software; es decir, la aplicación de la ingeniería al software. 2) El estudio de enfoques según el punto 1
 
-La ingenieria de softare es una tecnologia con varias capas que parte con el compromiso con la calidad.
+La ingeniería de software es una tecnología con varias capas que parte con el compromiso con la calidad.
 
-![Capas de la ingenieria de softawre](https://i.imgur.com/L7PpgTI.png)
+![Capas de la ingeniería de software](https://i.imgur.com/5VB7O1M.png)
 
-Aca se encuentran varios fundamentos o capas.
+Acá se encuentran varios fundamentos o capas.
 
-* El proceso de ingenieria permite el desarrollo racional y oportuno del software de computo, este permite el desarrollo racional y oportuno de software. Al mismo tiempo es la base para el control de la administracion de proyectos de software.
-* Los metodos proporcionan la experiencia tecnica para elaborar softawre, incluye un conjunto amplio de tareas, como la comunicacion, analisis de los requerimientos, modelacion del diseño, construccion del programa, pruebas y apoyo.
-* Las herramientas proporcionan un apoyo automatizado o semiautomatizado para el proceso y los metodos.
+* El proceso de ingeniería permite el desarrollo racional y oportuno del software de cómputo, este permite el desarrollo racional y oportuno de software. Al mismo tiempo es la base para el control de la administración de proyectos de software.
+* Los métodos proporcionan la experiencia técnica para elaborar software, incluye un conjunto amplio de tareas, como la comunicación, análisis de los requerimientos, modelación del diseño, construcción del programa, pruebas y apoyo.
+* Las herramientas proporcionan un apoyo automatizado o semiautomatizado para el proceso y los métodos.
 
-Cuando se integran las herramientas de modo que la informacion creada por una pueda ser utlizada por otra, queda establecido un sistema llamada ingenieria de software asistidu por computadora, que apoya al desarrollo de softare.
+Cuando se integran las herramientas de modo que la información creada por una pueda ser utilizada por otra, queda establecido un sistema llamado ingeniería de software asistido por computadora, que apoya al desarrollo de software.
 
 ## El Proceso del Software
 
-* El proceso es un conjunto de actividades, acciones y tareas que se ejecutan cuando va a crearse algun producto del trabajo.
-* Una actividad busca lograr un objetivo amplio (por ejemplo la comunicacion con los participantes) y se desarrolla sin importar el dominio de la aplicacion, tamaño del proyecto, complegidad del esfuerzo o grado de rigor con el que se usara la ingenieria de software.
-* Una accion es un conjunto de tareas que producen un producto importante del trabajo (por ejemplo un modelo de la arquitectura).
+* El proceso es un conjunto de actividades, acciones y tareas que se ejecutan cuando va a crearse algún producto del trabajo.
+* Una actividad busca lograr un objetivo amplio (por ejemplo la comunicación con los participantes) y se desarrolla sin importar el dominio de la aplicación, tamaño del proyecto, complejidad del esfuerzo o grado de rigor con el que se usara la ingeniería de software.
+* Una acción es un conjunto de tareas que producen un producto importante del trabajo (por ejemplo un modelo de la arquitectura).
 * Una tarea se centra en un objetivo pequeño pero bien definido (por ejemplo realizar una prueba unitaria).
 
-El proceso no es una simple prescripcion para el desarrollo de software, sino un enfoque adaptable que permite al equipo de desarrollo seleccionar el conjunto de acciones y tareas para el trabajo. Este por lo general incluye a la siguientes 5 actividades.
+El proceso no es una simple prescripción para el desarrollo de software, sino un enfoque adaptable que permite al equipo de desarrollo seleccionar el conjunto de acciones y tareas para el trabajo. Este por lo general incluye las siguientes 5 actividades.
 
-* Comunicacion: Antes de iniciar cualquier trabajo, es importante comunicarse y colaborar con el cliente, con esto se busca entender los objetivos de los participantes respecto al proyecto y recolectar requerimientos.
-* Planeacion: Esta busca la elaboracion de un "mapa", tambien conocido como "Plan del Proyecto de Software". Este define el trabajo de ingenieria de software al decribir las tareas tecnicas por realizar, los riesgos probables, las recursos requeridos, los productos del trabajo que se obtendran y una programmacion de las actividades
-* Modelado: Esta es la creacion de un bosquejo con la meta de vizualizar como cada elemento encaja en producto final.
-* Construccion: Esta actividad incluye la generacion de codigo y las pruebas para descubrir errores.
-* Despliegue: Esta es la actividad de poner el sotware en produccion para el consumo del cliente.
+* Comunicación: Antes de iniciar cualquier trabajo, es importante comunicarse y colaborar con el cliente, con esto se busca entender los objetivos de los participantes respecto al proyecto y recolectar requerimientos.
+* Planeación: Esta busca la elaboración de un "mapa", también conocido como "Plan del Proyecto de Software". Este define el trabajo de ingeniería de software al describir las tareas técnicas por realizar, los riesgos probables, los recursos requeridos, los productos del trabajo que se obtendrán y una programación de las actividades
+* Modelado: Esta es la creación de un bosquejo con la meta de visualizar como cada elemento encaja en producto final.
+* Construcción: Esta actividad incluye la generación de código y las pruebas para descubrir errores.
+* Despliegue: Esta es la actividad de poner el software en producción para el consumo del cliente.
 
-Estas actividades estructurales se ejecutan en ciclos, obteniendo asi una iteracion del producto del software. Estos ciclos se pueden realizar durante actividades sombrilla, estas se ejecutan a lo largo de un proyecto de software y ayudan al equipo a administrar y controlar el avance, la calidad, el cambio y el riesgo:
+Estas actividades estructurales se ejecutan en ciclos, obteniendo así una iteración del producto del software. Estos ciclos se pueden realizar durante actividades sombrilla, estas se ejecutan a lo largo de un proyecto de software y ayudan al equipo a administrar y controlar el avance, la calidad, el cambio y el riesgo:
 
-* Seguimiento y control del proyecto de software: Permite que el equipo evalue el progreso, comprobandolo contra el plan del proyecto y tome cualquier accion necesaria para apegarse a la programacion de actividades.
-* Administracion del riesgo: Evalua los riesgos que puedna afectar el resultado del proyecto o calidad del mismo.
+* Seguimiento y control del proyecto de software: Permite que el equipo evalúe el progreso, comprobándolo contra el plan del proyecto y tome cualquier acción necesaria para apegarse a la programación de actividades.
+* Administración del riesgo: Evalúa los riesgos que pueda afectar el resultado del proyecto o calidad del mismo.
 * Aseguramiento de la calidad del software: Define y ejecuta las actividades requeridas para garantizar la calidad del software.
-* Revisiones tecnicas: Evalua los productos del trabajo con el fin de descubrir y eliminar errores antes de que se propaguen a la siguiente actividad.
-* Medicion: Define y reune mediciones del proceso, proyecto y producto para ayudar al equipo a entregar el software que cumpla las necesidades de los participantes.
-* Administracion de la configuracion del software: Administra los efectos del cambio a largo del proceso del software.
-* Administracion de las reutilizacion: Define criterios apra volver a usar el producto del trabajo y establece mecanismos para obtener componentes reutilizables.
-* Preparacion y produccion del producto del trabajo: Agrupa las actividades requeridas para crear productos del trabajo, tales como modelos, documentos, registros, formatos y listas.
+* Revisiones técnicas: Evalúa los productos del trabajo con el fin de descubrir y eliminar errores antes de que se propaguen a la siguiente actividad.
+* Medición: Define y reúne mediciones del proceso, proyecto y producto para ayudar al equipo a entregar el software que cumpla las necesidades de los participantes.
+* Administración de la configuración del software: Administra los efectos del cambio a largo del proceso del software.
+* Administración de las reutilización: Define criterios para volver a usar el producto del trabajo y establece mecanismos para obtener componentes reutilizables.
+* Preparación y producción del producto del trabajo: Agrupa las actividades requeridas para crear productos del trabajo, tales como modelos, documentos, registros, formatos y listas.
 
 
 ## Mitos del Software
 
-Estas son creencias erroneas sobre este y proceso que se utiliza para obtenerlo,
+Estas son creencias erróneas sobre este y proceso que se utiliza para obtenerlo,
 
-### Mitos de la Administracion
+### Mitos de la Administración
 
 * Mito: Tenemos un libro lleno de estándares y procedimientos para elaborar software.
     * Realidad: Puede que exista un libro, pero no se conoce de este o en ciertos casos no se pone en uso.
-* Mito: Si nos atrasamos, podemos agregar más programadores y ponernos al corriente
-    *  Realidad: Agregar mas personal implica esfuerzo por parte del equipo existente para ponerlo al dia con el desarrollo del producto, perdidiendo asi eficiencia en el desarrollo del sistema.
+* Mito: Si nos atrasamos, podemos agregar más programadores y ponerlos al día con el proyecto.
+    *  Realidad: Agregar más personal implica esfuerzo por parte del equipo existente para ponerlo al día con el desarrollo del producto, perdiendo así eficiencia en el desarrollo del sistema.
 * Mito: Si decido subcontratar el proyecto de software a un tercero, puedo descansar y dejar que esa compañía lo elabore. 
-    * Realidad: Si una empresa no sabe como administrar sus proyectos internos, no podra gestioanr un proyecto desarrollado por terceros.
+    * Realidad: Si una empresa no sabe como administrar sus proyectos internos, no podrá gestionar un proyecto desarrollado por terceros.
 
 ### Mitos del Cliente
 
-* Mito: Para comenzar a escribir programas, es suficiente el enunciado general de los
-    * Realidad: Requerimientos ambiguos son la receta perfecta para el desastre, los requerimientos no ambiguos se desarrollan solo por medio de una comunicacion eficaz y continua entre el cliente y el desarrollador.
-* Mito: Los requerimientos del software cambian continuamente, pero el cambio se asimila con facilidad debido a que el software es flexible objetivos.
-    * Realidad: El efecto del cambio depende de que tan avanzado se encuentra en la etapa de desarrollo del software, entre mas tarde se haga, mayor sera su efecto. 
+* Mito: Para comenzar a escribir programas, es suficiente el enunciado general de la 
+    * Realidad: Requerimientos ambiguos son la receta perfecta para el desastre, los requerimientos no ambiguos se desarrollan solo por medio de una comunicación eficaz y continua entre el cliente y el desarrollador.
+* Mito: Los requerimientos del software cambian continuamente, pero el cambio se asimila con facilidad debido a que el software es flexible.
+    * Realidad: El efecto del cambio depende de que tan avanzado se encuentra en la etapa de desarrollo del software, entre más tarde se haga, mayor será su efecto. 
 
 ### Mitos del Profesional
 
 * Mito: Una vez que escribimos el programa y hacemos que funcione, nuestro trabajo ha terminado
-    * Realidad: La mayoria del esfuerzo se da despues de haber finalizado con el proyecto y haberlo entregado por primera vez.
+    * Realidad: La mayoría del esfuerzo se da después de haber finalizado con el proyecto y haberlo entregado por primera vez.
 * Mito: Hasta que no se haga “correr” el programa, no hay manera de evaluar su calidad.
-    * Realidad: Uno de los mecanismos mas eficaces para asegurar la calidad del software puede aplicarse desde la concepcion del proyecto: la revision tecnica.
+    * Realidad: Uno de los mecanismos más eficaces para asegurar la calidad del software puede aplicarse desde la concepción del proyecto: la revisión técnica.
 * Mito: El único producto del trabajo que se entrega en un proyecto exitoso es el programa que funciona
-    * Realidad: Un programa funcional es solo uno de los entregables, aca se incluyen otros productos terminados como modelos, diagramas y planes, estos proporcionan la base para un proceso de ingenieria exitosa.
-* Mito: La ingenieria de software hara que generemos documentacion voluminosa, e invariablemente nos retrasara.
-    * Realidad: La ingenieria de softare con consiste en generar documentos, se trata de generar un producto de calidad. La mejor calidad evitara que hagamos menos repeticione y nos dara tiempos de entrega mas cortos. 
+    * Realidad: Un programa funcional es solo uno de los entregables, acá se incluyen otros productos terminados como modelos, diagramas y planes, estos proporcionan la base para un proceso de ingeniería exitosa.
+* Mito: La ingeniería de software hará que generemos documentación voluminosa, e invariablemente nos retrasara.
+    * Realidad: La ingeniería de software no consiste en generar documentos, se trata de generar un producto de calidad. La mejor calidad evitará que hagamos menos repetición y nos dará tiempos de entrega más cortos. 
