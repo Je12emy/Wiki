@@ -12,3 +12,4 @@ Link to original article: https://www.freecodecamp.org/news/the-nginx-handbook/
 - [Logging in NGINX](logging_in_nginx)
 - [How to use NGINX as a Reverse Proxy](how_to_use_nginx_as_a_reverse_proxy)
 - [How to use NGINX as a Load Balancer](how_to_use_nginx_as_a_load_balancer)
+- [How to Optimize NGINX for Maximum Performance](how_to_optimize_nginx_for_maximum_performance)
