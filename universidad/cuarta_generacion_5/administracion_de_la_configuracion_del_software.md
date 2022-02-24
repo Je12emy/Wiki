@@ -54,3 +54,92 @@ Aparte de estos ICS, muchas organizaciones agrupan herramientas de software bajo
 En realidad, los ICS se pueden organizar en objetos para que así puedan categorizarse con un solo nombre en la base de datos. Un objeto de configuración tiene un nombre y atributo y se conecta a otros objetos.
 
 ![Objetos de Configuración](https://i.imgur.com/R3KnaY7.png)
+
+## El Repositorio ACS
+
+Se puede definir al repositorio como una base de datos donde se almacenan los ítems de configuración del software, en el pasado podían ser simples carpetas con los documentos de papel o incluso las tarjetas perforadas con el código fuente. Esta solución no era escalable y difícil de mantener, ya que el mismo programador era el responsable de mantener y extraer la información necesaria. En la actualidad el repositorio es una base de datos que actual como el centro de acumulación y almacenamiento de la información de ingeniería de software. El papel del ingeniero es interactuar con el repositorio, usando las herramientas que se integran a él.
+
+![Contenido del Repositorio ACS](https://i.imgur.com/aH56r65.png)
+
+
+### Características ACS
+
+El repositorio debe de contar con conjunto de herramientas para apoyar el ACS.
+
+* Control de versión: Debe contar con la capacidad de controlar las versiones de los distintos documentos y archivos que sean almacenados en este, permitiendo al equipo revisar versiones anteriores de ser necesario.
+* Rastreo de dependencias y gestión del cambio: Debe contar con la capacidad de gestionar la relaciones entre objetos almacenados entre estos, sean simples asociaciones, dependencias o relaciones obligatorias. Rastrear la relación entre estos objetos es vital para la integridad de la información almacenada en el repositorio.
+* Auditoria: Debe contar con la capacidad de identificar, cuando, quien y porque se han realizado cambios en los objetos dentro del repositorio.
+
+## El Proceso ACS
+
+El proceso de administración de la configuración del software define una serio de tareas con 4 objetivos clave:
+
+* Identificar todos los ítems que de manera colectiva definen la configuración del software.
+* Administrar los cambios a uno o más de estos ítems.
+* Facilitar la construcción de diferentes versiones de una aplicación.
+* Garantizar que la calidad del software se mantiene conforme la configuración evoluciona con el tiempo.
+
+El proceso debe lograr estos 4 objetivos de tal manera que permita resolver las siguientes 5 preguntas.
+
+* ¿Cómo identifica un equipo de software los elementos discretos de una configuración de software?
+* ¿Cómo gestiona una organización las muchas versiones existentes de un programa (y su documentación) de manera que permita que el cambio se acomode eficientemente?
+* ¿Cómo controla una organización los cambios antes y después de que el software se libera a un cliente?
+* ¿Quién tiene la responsabilidad de aprobar y clasificar los cambios solicitados?
+* ¿Cómo puede garantizarse que los cambios se realizaron adecuadamente?
+* ¿Qué mecanismo se usa para enterar a otros acerca de los cambios que se realizaron?
+
+En realidad estas 5 preguntas dan raíz a las 5 etapas del proceso ACS, donde se parte desde una capa interna hacia el exterior.
+
+![Capas del Proceso ACS](https://i.imgur.com/VQQ4INC.png)
+
+### Identificación de objetos en la configuración del software
+
+Para controlar y administrar los ítems de configuración del software, cada uno debe ser nombrado y organizarse con un enfoque orientado a objetos. Acá se van a encontrar dos tipos de objetos:
+
+* Objetos básicos: Unidad básica de información por ejemplo un simple diagrama UML, un diseño, una prueba de código, etc.
+* Objetos agregados: Estos están compuestos por varios objetos básicos, por ejemplo una suite de pruebas o un diseño arquitectónico.
+
+Todos estos objetos cuentan con atributos, sea su nombre, descripción, recursos y criterios de aceptación.
+
+### Control de Versión
+
+Este combina los procedimientos y herramientas para administrar diferentes versiones de los objetos de configuración que sé crear a lo largo del desarrollo del software, un sistema de control de versión generalmente cumple con 3 capacidades:
+
+* Almacena todos los objetos de configuración relevantes.
+* Cuenta con la capacidad de administrar la versión de todos los objetos de configuración, permitiendo así usar versiones viejas de un objeto.
+* Facilidad para reconstruir versiones antiguas de objetos de configuración para así compilar una versión específica del software.
+
+### Control de Cambio
+
+Este es el proceso necesario para controlar el cambio en el repositorio ACS, este debe de ser balanceado, ya que mucho o poco cambio pueden conducir al caos dentro del proyecto.
+
+![Proceso del Control del Cambio](https://i.imgur.com/N07CvmP.png)
+
+### Auditoria de Configuración
+
+El control únicamente gestionar el proceso bajo el cambio se integra al proyecto, aun así es necesario asegurarse de que el cambio se ha implementado adecuadamente, esto es logrado mediante dos mecanismos.
+
+* Revisiones técnicas.
+* Auditoria de la revisión del cambio.
+
+La revisión técnica se enfoca en la exactitud técnica del objeto de configuración que se modificó, los revisores valoran el ICS para determinar su constancia con otros ICS, así como omisiones o potenciales efectos colaterales.
+
+La auditoria de configuración del software complementa a la revisión técnica al valorar un objeto de configuración acerca de las características que por lo general no se consideran durante la revisión.
+
+1. ¿Se realizó el cambio especificado en la OCI? ¿Se incorporó alguna modificación adicional?
+2. ¿Se llevó a cabo una revisión técnica para valorar la exactitud técnica?
+3. ¿Se siguió el proceso del software y se aplicaron adecuadamente los estándares de ingeniería de software?
+4. ¿El cambio se “resaltó” en el ICS? ¿Se especificaron la fecha del cambio y el autor del cambio? ¿Los atributos del objeto de configuración reflejan el cambio?
+5. ¿Se siguieron los procedimientos ACS para anotar, registrar y reportar el cambio?
+6. ¿Los ICS relacionados se actualizaron adecuadamente?
+
+### Reporte de Estado
+
+El reporte de estado de la configuración (llamado también contabilidad de estado) es una tarea que responde a las siguientes preguntas.
+
+* ¿Qué ocurrió?
+* ¿Quién lo hizo?
+* ¿Cuándo ocurrió?
+* ¿Qué más se afectará?
+
+Cada cambio en un ICS debe quedar registrado en el reporte del estado de la configuración (REC), la salida de este debe ser accesible para todo el equipo.
